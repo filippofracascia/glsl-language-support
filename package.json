@@ -43,5 +43,6 @@
             "scopeName": "source.glsl",
             "path": "./syntaxes/glsl.tmLanguage.json"
         }]
-    }
+    },
+    "repository": "https://github.com/filippofracascia/glsl-language-support"
 }
