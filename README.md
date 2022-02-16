@@ -1,8 +1,7 @@
-# glsl-language-support
+# GLSL-language-support
 
   
-
-Since I was having trouble finding glsl support for VScode in Linux, as the official glsl repository is Windows exclusive, I tried making my own language support for it.
+Since I was having trouble finding GLSL support for VScode in Linux, as the official glsl repository is Windows exclusive, I tried making my own language support for it.
 
   
 
@@ -20,7 +19,7 @@ Since I was having trouble finding glsl support for VScode in Linux, as the offi
 
 ### Syntax highlighting
 
-Basic context aware sintax highlighting following C language standards and **[SPIR-V specification](https://www.khronos.org/registry/SPIR-V/specs/unified1/SPIRV.html)** defined by Khronos.
+Basic context aware sintax highlighting following C language standards and **[SPIR-V specification](https://www.khronos.org/registry/SPIR-V/specs/unified1/SPIRV.html)** as defined by Khronos group.
 
   
 
@@ -46,13 +45,15 @@ Basic context aware sintax highlighting following C language standards and **[SP
 ## Installation
 
 
-If you cannot find the extension on the Visual Studio Marketplace, do this:
+If you cannot find the extension on the VScode marketplace:
 <ul>
-	<li> Go <a href = "https://marketplace.visualstudio.com/items?itemName=filippofracascia.glsl-language-support">here. </li>
+	<li> Go <a href = "https://marketplace.visualstudio.com/items?itemName=filippofracascia.glsl-language-support">here. </a> </li>
 	<li> Manually download the extension (it will be a .vsix file).</li>
 	<li> Open VScode, then go to the extensions menu on the left sidebar.</li>
 	<li> Open the three dots above the search query, then select "Install from VSIX".</li>
+	<li> Select the downloaded extension.
 	<li> The extension should now be up and running, refresh the window if required. </li>
+</ul>
 	
 
 
