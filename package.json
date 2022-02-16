@@ -1,0 +1,47 @@
+{
+    "name": "glsl-language-support",
+    "displayName": "GLSL language support",
+    "description": "GLSL extension that recognizes GLSL and SPIR-V, with syntax highlighting",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "glsl",
+            "aliases": ["GLSL", "glsl"],
+            "extensions": ["vs",
+                "fs",
+                "fx",
+                "gs",
+                "cs",
+                "tc",
+                "te",
+                "vsh",
+                "fsh",
+                "gsh",
+                "vshader",
+                "fshader",
+                "gshader",
+                "vert",
+                "frag",
+                "geom",
+                "tesc",
+                "tese",
+                "comp",
+                "f.glsl",
+                "v.glsl",
+                "g.glsl",
+                "glsl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "glsl",
+            "scopeName": "source.glsl",
+            "path": "./syntaxes/glsl.tmLanguage.json"
+        }]
+    }
+}
