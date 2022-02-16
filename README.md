@@ -11,7 +11,12 @@ Since I was having trouble finding glsl support for VScode in Linux, as the offi
 ### Syntax highlighting
 Basic context aware sintax highlighting following C language standards and **[SPIR-V specification](https://www.khronos.org/registry/SPIR-V/specs/unified1/SPIRV.html)** defined by Khronos.
 
-![Monokai color scheme](./assets/demo.png)
+-----------------------------------------------------------------------------------------------------------
+
+
+![Demo using Monokai color scheme](https://i.ibb.co/XLbV7qj/Monokai-Demo.png)
+
+-----------------------------------------------------------------------------------------------------------
 
 ### Code Snippets
 //TODO
@@ -19,12 +24,6 @@ Basic context aware sintax highlighting following C language standards and **[SP
 ## Installation
 
 
-## Release Notes
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
 
 -----------------------------------------------------------------------------------------------------------

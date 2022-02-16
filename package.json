@@ -44,5 +44,6 @@
             "path": "./syntaxes/glsl.tmLanguage.json"
         }]
     },
-    "repository": "https://github.com/filippofracascia/glsl-language-support"
+    "repository": "https://github.com/filippofracascia/glsl-language-support",
+    "publisher": "filippofracascia"
 }
