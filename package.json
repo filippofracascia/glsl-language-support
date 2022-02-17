@@ -42,7 +42,13 @@
             "language": "glsl",
             "scopeName": "source.glsl",
             "path": "./syntaxes/glsl.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "glsl",
+                "path": "./snippets/glsl.json"
+            }
+        ]
     },
     "repository": "https://github.com/filippofracascia/glsl-language-support",
     "publisher": "filippofracascia"

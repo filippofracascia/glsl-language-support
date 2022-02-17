@@ -1,0 +1,170 @@
+{
+
+    "While": {
+        "prefix": ["while"],
+        "body": ["while (${1:true}){\n\n};"]
+    },
+
+    "Do While": {
+        "prefix": ["do-while"],
+        "body": ["do {\n\n} while(${1:true});"]
+    },
+
+    "For": {
+        "prefix": ["for"],
+        "body": ["for(${1:int i = 0}; ${2:i < len}; ${3:i++}){\n\n}"]
+    },
+
+
+
+
+    "Radians": {
+        "prefix": ["radians"],
+        "body": ["radians(${1:genType radians});"],
+        "description": "Converts degrees to radians."
+    },
+    
+    "Degrees": {
+        "prefix": ["degrees"],
+        "body": ["radians(${1:genType radians});"],
+        "description": "Converts radians to degrees."
+    },
+
+    "Sin": {
+        "prefix": ["sin"],
+        "body": ["sin(${1:genType angle});"],
+        "description": "The standard trigonometric sin function."
+    },
+
+    "Cos": {
+        "prefix": ["cos"],
+        "body": ["cos(${1:genType angle});"],
+        "description": "The standard trigonometric cos function."
+    },
+
+    "Tan": {
+        "prefix": ["tan"],
+        "body": ["tan(${1:genType angle});"],
+        "description": "The standard trigonometric tan function."
+    },
+
+    "Asin": {
+        "prefix": ["asin"],
+        "body": ["asin(${1:genType angle});"],
+        "description": "Arc sine. Returns an angle whose sine is x."
+    },
+
+    "Acos": {
+        "prefix": ["acos"],
+        "body": ["acos(${1:genType angle});"],
+        "description": "Arc cosine. Returns an angle whose cosine is x."
+    },
+
+    "Atan (y, x)": {
+        "prefix": ["atan"],
+        "body": ["atan(${1:genType y}, ${2:genType x});"],
+        "description": "Arc tangent. Returns an angle whose tangent is y/x."
+    },
+
+    "Atan (y_over_x)": {
+        "prefix": ["atan"],
+        "body": ["atan(${1:genType y_over_x});"],
+        "description": "Arc tangent. Returns an angle whose tangent is y_over_x."
+    },
+
+    "Sinh": {
+        "prefix": ["sinh"],
+        "body": ["sinh(${1:genType x});"],
+        "description": "Returns the hyperbolic sine function."
+    },
+
+    "Cosh": {
+        "prefix": ["cosh"],
+        "body": ["cosh(${1:genType x});"],
+        "description": "Returns the hyperbolic cosine function."
+    },
+
+    "Tanh": {
+        "prefix": ["tanh"],
+        "body": ["tanh(${1:genType x});"],
+        "description": "Returns the hyperbolic tangent function."
+    },
+
+    "Asinh": {
+        "prefix": ["asinh"],
+        "body": ["asinh(${1:genType x});"],
+        "description": "Arc hyperbolic sine; returns the inverse of sinh."
+    },
+
+    "Acosh": {
+        "prefix": ["acosh"],
+        "body": ["acosh(${1:genType x});"],
+        "description": "Arc hyperbolic cosine; returns the non-negative inverse of cosh. Results are undefined if x < 1."
+    },
+
+    "Atanh": {
+        "prefix": ["atanh"],
+        "body": ["atanh(${1:genType x});"],
+        "description": "Arc hyperbolic tangent; returns the inverse of tanh. Results are undefined if |x| ≥ 1."
+    },
+
+
+
+
+    "Pow":{
+        "prefix": ["pow"],
+        "body": ["pow(${1:genType x}, ${2:genType y});"],
+        "description": "Returns x raised to the y power. Results are undefined if x < 0. Results are undefined if x = 0 and y <= 0."
+    },
+
+    "Exp": {
+        "prefix": ["exp"],
+        "body": ["exp(${1:genType x});"],
+        "description": "Returns the natural exponentiation of x."
+    },
+
+    "Log": {
+        "prefix": ["log"],
+        "body": ["log(${1:genType x});"],
+        "description": "Returns the natural logarithm of x. Results are undefined if x <= 0."
+    },
+
+    "Exp2": {
+        "prefix": ["exp2"],
+        "body": ["exp2(${1:genType x});"],
+        "description": "Returns 2 raised to the x power."
+    },
+
+    "Log2": {
+        "prefix": ["log2"],
+        "body": ["exp2(${1:genType x});"],
+        "description": "Returns the base 2 logarithm of x. Results are undefined if x <= 0."
+    },
+
+    "Sqrt (genType x)": {
+        "prefix": ["sqrt"],
+        "body": ["sqrt(${1:genType x});"],
+        "description": "Returns the square root of x. Results are undefined if x < 0."
+    },
+
+    "Sqrt (genDType x)": {
+        "prefix": ["sqrt"],
+        "body": ["sqrt(${1:genDType x});"],
+        "description": "Returns the square root of x. Results are undefined if x < 0."
+    },
+
+    "Inverse Sqrt (genType x)": {
+        "prefix": ["inversesqrt"],
+        "body": ["sqrt(${1:genType x});"],
+        "description": "Returns 1 divided by the square root of x. Results are undefined if x < 0."
+    },
+
+    "Inverse Sqrt (genDType x)": {
+        "prefix": ["inversesqrt"],
+        "body": ["sqrt(${1:genDType x});"],
+        "description": "Returns 1 divided by the square root of x. Results are undefined if x < 0."
+    }
+
+
+}
+

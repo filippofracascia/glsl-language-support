@@ -11,3 +11,10 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ### Added
 - Language support for GLSL and SPIR-V.
 - Syntax highlight.
+
+
+## [1.0.1] - Patch - 2022-02-18
+### Added
+- Missing images, iimages, uimages types and their derivates.
+- Missing incompatible keywords, such as 'namespace','using','sizeof','long','short' etc.
+- Code snippets for control flow statements, mathematical and trigonometrics functions.
