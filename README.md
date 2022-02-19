@@ -60,8 +60,11 @@ Basic context aware sintax highlighting following C language standards and **[GL
 
 Code snippets, at the moment, give support for:
 <lu>
-<li>Basic control flow statements;</li>
-<li>Mathematical and trigonometric functions;</li>
+<li>Angle and Trigonometry Functions;</li>
+<li>Exponential Functions</li>
+<li>Common Functions;</li>
+<li>Floating-Point Pack and Unpack Functions;</li>
+<li>Geometric functions;</li>
 </lu>
 
 More incoming!
