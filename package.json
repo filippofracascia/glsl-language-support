@@ -2,7 +2,7 @@
     "name": "glsl-language-support",
     "displayName": "GLSL language support",
     "description": "GLSL extension that recognizes GLSL and SPIR-V, with syntax highlighting",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "engines": {
         "vscode": "^1.64.0"
     },
