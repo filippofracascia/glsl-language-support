@@ -1,90 +1,90 @@
 {
 
-    "genFType Radians": {
+    "genFType radians": {
         "prefix": ["radians"],
         "body": ["radians(${1:genType radians})"],
         "description": "Converts degrees to radians."
     },
     
-    "genFType Degrees": {
+    "genFType degrees": {
         "prefix": ["degrees"],
         "body": ["radians(${1:genType radians})"],
         "description": "Converts radians to degrees."
     },
 
-    "genFType Sin": {
+    "genFType sin": {
         "prefix": ["sin"],
         "body": ["sin(${1:genType angle})"],
         "description": "The standard trigonometric sin function."
     },
 
-    "genFType Cos": {
+    "genFType cos": {
         "prefix": ["cos"],
         "body": ["cos(${1:genType angle})"],
         "description": "The standard trigonometric cos function."
     },
 
-    "genFType Tan": {
+    "genFType tan": {
         "prefix": ["tan"],
         "body": ["tan(${1:genType angle})"],
         "description": "The standard trigonometric tan function."
     },
 
-    "genFType Asin": {
+    "genFType asin": {
         "prefix": ["asin"],
         "body": ["asin(${1:genType angle})"],
         "description": "Arc sine. Returns an angle whose sine is x."
     },
 
-    "genFType Acos": {
+    "genFType acos": {
         "prefix": ["acos"],
         "body": ["acos(${1:genType angle})"],
         "description": "Arc cosine. Returns an angle whose cosine is x."
     },
 
-    "genFType Atan (genFType y, genFType x)": {
+    "genFType atan(genFType y, genFType x)": {
         "prefix": ["atan"],
         "body": ["atan(${1:genType y}, ${2:genType x})"],
         "description": "Arc tangent. Returns an angle whose tangent is y/x."
     },
 
-    "genFType Atan (genFType y_over_x)": {
+    "genFType atan(genFType y_over_x)": {
         "prefix": ["atan"],
         "body": ["atan(${1:genType y_over_x})"],
         "description": "Arc tangent. Returns an angle whose tangent is y_over_x."
     },
 
-    "genFType Sinh": {
+    "genFType sinh": {
         "prefix": ["sinh"],
         "body": ["sinh(${1:genType x})"],
         "description": "Returns the hyperbolic sine function."
     },
 
-    "genFType Cosh": {
+    "genFType cosh": {
         "prefix": ["cosh"],
         "body": ["cosh(${1:genType x})"],
         "description": "Returns the hyperbolic cosine function."
     },
 
-    "genFType Tanh": {
+    "genFType tanh": {
         "prefix": ["tanh"],
         "body": ["tanh(${1:genType x})"],
         "description": "Returns the hyperbolic tangent function."
     },
 
-    "genFType Asinh": {
+    "genFType asinh": {
         "prefix": ["asinh"],
         "body": ["asinh(${1:genType x})"],
         "description": "Arc hyperbolic sine returns the inverse of sinh."
     },
 
-    "genFType Acosh": {
+    "genFType acosh": {
         "prefix": ["acosh"],
         "body": ["acosh(${1:genType x})"],
         "description": "Arc hyperbolic cosine returns the non-negative inverse of cosh. Results are undefined if x < 1."
     },
 
-    "genFType Atanh": {
+    "genFType atanh": {
         "prefix": ["atanh"],
         "body": ["atanh(${1:genType x})"],
         "description": "Arc hyperbolic tangent returns the inverse of tanh. Results are undefined if |x| ≥ 1."
@@ -93,55 +93,55 @@
 
 
 
-    "genFType Pow":{
+    "genFType pow":{
         "prefix": ["pow"],
         "body": ["pow(${1:genType x}, ${2:genType y})"],
         "description": "Returns x raised to the y power. Results are undefined if x < 0. Results are undefined if x = 0 and y <= 0."
     },
 
-    "genFType Exp": {
+    "genFType exp": {
         "prefix": ["exp"],
         "body": ["exp(${1:genType x})"],
         "description": "Returns the natural exponentiation of x."
     },
 
-    "genFType Log": {
+    "genFType log": {
         "prefix": ["log"],
         "body": ["log(${1:genType x})"],
         "description": "Returns the natural logarithm of x. Results are undefined if x <= 0."
     },
 
-    "genFType Exp2": {
+    "genFType exp2": {
         "prefix": ["exp2"],
         "body": ["exp2(${1:genType x})"],
         "description": "Returns 2 raised to the x power."
     },
 
-    "genFType Log2": {
+    "genFType log2": {
         "prefix": ["log2"],
         "body": ["exp2(${1:genType x})"],
         "description": "Returns the base 2 logarithm of x. Results are undefined if x <= 0."
     },
 
-    "genFType Sqrt (genType x)": {
+    "genFType sqrt(genType x)": {
         "prefix": ["sqrt"],
         "body": ["sqrt(${1:genType x})"],
         "description": "Returns the square root of x. Results are undefined if x < 0."
     },
 
-    "genDType Sqrt (genDType x)": {
+    "genDType sqrt(genDType x)": {
         "prefix": ["sqrt"],
         "body": ["sqrt(${1:genDType x})"],
         "description": "Returns the square root of x. Results are undefined if x < 0."
     },
 
-    "genFType Inverse Sqrt (genType x)": {
+    "genFType inversesqrt(genType x)": {
         "prefix": ["inversesqrt"],
         "body": ["inversesqrt(${1:genType x})"],
         "description": "Returns 1 divided by the square root of x. Results are undefined if x < 0."
     },
 
-    "genDType Inverse Sqrt (genDType x)": {
+    "genDType inversesqrt(genDType x)": {
         "prefix": ["inversesqrt"],
         "body": ["inversesqrt(${1:genDType x})"],
         "description": "Returns 1 divided by the square root of x. Results are undefined if x < 0."
@@ -150,145 +150,145 @@
 
 
 
-    "genFType Abs (genFType x)": {
+    "genFType abs(genFType x)": {
         "prefix": ["abs"],
         "body": ["abs(${1:genFType x})"],
         "description": "Returns x if x ≥ 0 otherwise it returns -x."
     },
 
-    "genIType Abs (genIType x)": {
+    "genIType abs(genIType x)": {
         "prefix": ["abs"],
         "body": ["abs(${1:genIType x})"],
         "description": "Returns x if x ≥ 0 otherwise it returns -x."
     },
 
-    "genDType Abs (genDType x)": {
+    "genDType abs(genDType x)": {
         "prefix": ["abs"],
         "body": ["abs(${1:genDType x})"],
         "description": "Returns x if x ≥ 0 otherwise it returns -x."
     },
 
-    "genFType Sign (genFType x)": {
+    "genFType sign(genFType x)": {
         "prefix": ["sign"],
         "body": ["sign(${1:genFType x})"],
         "description": "Returns 1.0 if x > 0, 0.0 if x = 0, or -1.0 if x < 0."
     },
 
-    "genIType Sign (genIType x)": {
+    "genIType sign(genIType x)": {
         "prefix": ["sign"],
         "body": ["sign(${1:genIType x})"],
         "description": "Returns 1.0 if x > 0, 0.0 if x = 0, or -1.0 if x < 0."
     },
 
-    "genDType Sign (genDType x)": {
+    "genDType sign(genDType x)": {
         "prefix": ["sign"],
         "body": ["sign(${1:genDType x})"],
         "description": "Returns 1.0 if x > 0, 0.0 if x = 0, or -1.0 if x < 0."
     },
 
-    "genFType Floor (genFType x)": {
+    "genFType floor(genFType x)": {
         "prefix": ["floor"],
         "body": ["floor(${1:genFType x})"],
         "description": "Returns a value equal to the nearest integer that is less than or equal to x."
     },
 
-    "genDType Floor (genDType x)": {
+    "genDType floor(genDType x)": {
         "prefix": ["floor"],
         "body": ["floor(${1:genDType x})"],
         "description": "Returns a value equal to the nearest integer that is less than or equal to x."
     },
 
-    "genFType Trunc (genFType x)": {
+    "genFType trunc(genFType x)": {
         "prefix": ["trunc"],
         "body": ["trunc(${1:genFType x})"],
         "description": "Returns a value equal to the nearest integer to x whose absolute value is not larger than the absolute value of x."
     },
 
-    "genDType Trunc (genDType x)": {
+    "genDType trunc(genDType x)": {
         "prefix": ["trunc"],
         "body": ["trunc(${1:genDType x})"],
         "description": "Returns a value equal to the nearest integer to x whose absolute value is not larger than the absolute value of x."
     },
 
-    "genFType Round (genFType x)": {
+    "genFType round(genFType x)": {
         "prefix": ["round"],
         "body": ["round(${1:genFType x})"],
         "description": "Returns a value equal to the nearest integer to x. The fraction 0.5 will round in a direction chosen by the implementation, presumably the direction that is fastest. This includes the possibility that round(x) returns the same value as roundEven(x) for all values of x."
     },
 
-    "genDType Round (genDType x)": {
+    "genDType round(genDType x)": {
         "prefix": ["round"],
         "body": ["round(${1:genDType x})"],
         "description": "Returns a value equal to the nearest integer to x. The fraction 0.5 will round in a direction chosen by the implementation, presumably the direction that is fastest. This includes the possibility that round(x) returns the same value as roundEven(x) for all values of x."
     },
 
-    "genFType Round Even (genFType x)": {
+    "genFType roundEven(genFType x)": {
         "prefix": ["roundEven"],
         "body": ["roundEven(${1:genFType x})"],
         "description": "Returns a value equal to the nearest integer to x. A fractional part of 0.5 will round toward the nearest even integer. (Both 3.5 and 4.5 for x will return 4.0.)"
     },
 
-    "genDType Round Even (genDType x)": {
+    "genDType roundEven(genDType x)": {
         "prefix": ["roundEven"],
         "body": ["roundEven(${1:genDType x})"],
         "description": "Returns a value equal to the nearest integer to x. A fractional part of 0.5 will round toward the nearest even integer. (Both 3.5 and 4.5 for x will return 4.0.)"
     },
 
-    "genFType Ceil (genFType x)": {
+    "genFType ceil(genFType x)": {
         "prefix": ["ceil"],
         "body": ["ceil(${1:genFType x})"],
         "description": "Returns a value equal to the nearest integer that is greater than or equal to x."
     },
 
-    "genDType Ceil (genDType x)": {
+    "genDType ceil(genDType x)": {
         "prefix": ["ceil"],
         "body": ["ceil(${1:genDType x})"],
         "description": "Returns a value equal to the nearest integer that is greater than or equal to x."
     },
 
-    "genFType Fract (genFType x)": {
+    "genFType fract(genFType x)": {
         "prefix": ["fract"],
         "body": ["fract(${1:genFType x})"],
         "description": "Returns x - floor(x)."
     },
 
-    "genDType Fract (genDType x)": {
+    "genDType fract(genDType x)": {
         "prefix": ["fract"],
         "body": ["fract(${1:genDType x})"],
         "description": "Returns x - floor(x)."
     },
 
-    "genFType Mod (genFType x, float y)": {
+    "genFType mod(genFType x, float y)": {
         "prefix": ["mod"],
         "body": ["mod(${1:genFType x}, ${2:float y})"],
         "description": "Modulus. Returns x - y · floor(x / y)."
     },
 
-    "genFType Mod (genFType x, genFType y)": {
+    "genFType mod(genFType x, genFType y)": {
         "prefix": ["mod"],
         "body": ["mod(${1:genFType x}, ${2:genFType y})"],
         "description": "Modulus. Returns x - y · floor(x / y)."
     },
 
-    "genDType Mod (genDType x, double y)": {
+    "genDType mod(genDType x, double y)": {
         "prefix": ["mod"],
         "body": ["mod(${1:genDType x}, ${2:double y})"],
         "description": "Modulus. Returns x - y · floor(x / y)."
     },
 
-    "genDType Mod (genDType x, genDType y)": {
+    "genDType mod(genDType x, genDType y)": {
         "prefix": ["mod"],
         "body": ["mod(${1:genDType x}, ${2:genDType y})"],
         "description": "Modulus. Returns x - y · floor(x / y)."
     },
 
-    "genFType Modf (genFType x, out genFType i)": {
+    "genFType modf(genFType x, out genFType i)": {
         "prefix": ["modf"],
         "body": ["modf(${1:genFType x}, ${2:out genFType i})"],
         "description": "Returns the fractional part of x and sets i to the integer part (as a whole number floating-point value). Both the return value and the output parameter will have the same sign as x."
     },
 
-    "genDType Modf (genDType x, out genDType i)": {
+    "genDType modf(genDType x, out genDType i)": {
         "prefix": ["modf"],
         "body": ["modf(${1:genDType x}, ${2:out genDType i})"],
         "description": "Returns the fractional part of x and sets i to the integer part (as a whole number floating-point value). Both the return value and the output parameter will have the same sign as x."
@@ -297,296 +297,296 @@
 
 
 
-    "genFType Min (genFType x, genFType y)": {
+    "genFType min(genFType x, genFType y)": {
         "prefix": ["min"],
         "body": ["min(${1:genFType x}, ${2:genFType y})"],
         "description": "Returns y if y < x; otherwise it returns x."
     },
-    "genFType Min (genFType x, float y)": {
+    "genFType min(genFType x, float y)": {
         "prefix": ["min"],
         "body": ["min(${1:genFType x}, ${2:float y})"],
         "description": "Returns y if y < x; otherwise it returns x."
     },
-    "genDType Min (genDType x, genDType y)": {
+    "genDType min(genDType x, genDType y)": {
         "prefix": ["min"],
         "body": ["min(${1:genDType x}, ${2:genDType y})"],
         "description": "Returns y if y < x; otherwise it returns x."
     },
-    "genDType Min (genDType x, double y)": {
+    "genDType min(genDType x, double y)": {
         "prefix": ["min"],
         "body": ["min(${1:genDType x}, ${2:double y})"],
         "description": "Returns y if y < x; otherwise it returns x."
     },
-    "genIType Min (genIType x, genIType y)": {
+    "genIType min(genIType x, genIType y)": {
         "prefix": ["min"],
         "body": ["min(${1:genIType x}, ${2:genIType y})"],
         "description": "Returns y if y < x; otherwise it returns x."
     },
-    "genIType Min (genIType x, int y)": {
+    "genIType min(genIType x, int y)": {
         "prefix": ["min"],
         "body": ["min(${1:genIType x}, ${2:int y})"],
         "description": "Returns y if y < x; otherwise it returns x."
     },
-    "genUType Min (genUType x, genUType y)": {
+    "genUType min(genUType x, genUType y)": {
         "prefix": ["min"],
         "body": ["min(${1:genUType x}, ${2:genUType y})"],
         "description": "Returns y if y < x; otherwise it returns x."
     },
-    "genUType Min (genUType x, uint y)": {
+    "genUType min(genUType x, uint y)": {
         "prefix": ["min"],
         "body": ["min(${1:genUType x}, ${2:uint y})"],
         "description": "Returns y if y < x; otherwise it returns x."
     },
 
 
-    "genFType Max (genFType x, genFType y)": {
+    "genFType max(genFType x, genFType y)": {
         "prefix": ["max"],
         "body": ["max(${1:genFType x}, ${2:genFType y})"],
         "description": "Returns y if x < y; otherwise it returns x."
     },
-    "genFType Max (genFType x, float y)": {
+    "genFType max(genFType x, float y)": {
         "prefix": ["max"],
         "body": ["max(${1:genFType x}, ${2:float y})"],
         "description": "Returns y if x < y; otherwise it returns x."
     },
-    "genDType Max (genDType x, genDType y)": {
+    "genDType max(genDType x, genDType y)": {
         "prefix": ["max"],
         "body": ["max(${1:genDType x}, ${2:genDType y})"],
         "description": "Returns y if x < y; otherwise it returns x."
     },
-    "genDType Max (genDType x, double y)": {
+    "genDType max(genDType x, double y)": {
         "prefix": ["max"],
         "body": ["max(${1:genDType x}, ${2:double y})"],
         "description": "Returns y if x < y; otherwise it returns x."
     },
-    "genIType Max (genIType x, genIType y)": {
+    "genIType max(genIType x, genIType y)": {
         "prefix": ["max"],
         "body": ["max(${1:genIType x}, ${2:genIType y})"],
         "description": "Returns y if x < y; otherwise it returns x."
     },
-    "genIType Max (genIType x, int y)": {
+    "genIType max(genIType x, int y)": {
         "prefix": ["max"],
         "body": ["max(${1:genIType x}, ${2:int y})"],
         "description": "Returns y if x < y; otherwise it returns x."
     },
-    "genUType Max (genUType x, genUType y)": {
+    "genUType max(genUType x, genUType y)": {
         "prefix": ["max"],
         "body": ["max(${1:genUType x}, ${2:genUType y})"],
         "description": "Returns y if x < y; otherwise it returns x."
     },
-    "genUType Max (genUType x, uint y)": {
+    "genUType max(genUType x, uint y)": {
         "prefix": ["max"],
         "body": ["max(${1:genUType x}, ${2:uint y})"],
         "description": "Returns y if x < y; otherwise it returns x."
     },
 
 
-    "genFType Clamp (genFType x, genFType y)": {
+    "genFType clamp(genFType x, genFType y)": {
         "prefix": ["clamp"],
         "body": ["clamp(${1:genFType x}, ${2:genFType y})"],
         "description": "Returns min(max(x, minVal), maxVal). Results are undefined if minVal > maxVal."
     },
-    "genFType Clamp (genFType x, float y)": {
+    "genFType clamp(genFType x, float y)": {
         "prefix": ["clamp"],
         "body": ["clamp(${1:genFType x}, ${2:float y})"],
         "description": "Returns min(max(x, minVal), maxVal). Results are undefined if minVal > maxVal."
     },
-    "genDType Clamp (genDType x, genDType y)": {
+    "genDType clamp(genDType x, genDType y)": {
         "prefix": ["clamp"],
         "body": ["clamp(${1:genDType x}, ${2:genDType y})"],
         "description": "Returns min(max(x, minVal), maxVal). Results are undefined if minVal > maxVal."
     },
-    "genDType Clamp (genDType x, double y)": {
+    "genDType clamp(genDType x, double y)": {
         "prefix": ["clamp"],
         "body": ["clamp(${1:genDType x}, ${2:double y})"],
         "description": "Returns min(max(x, minVal), maxVal). Results are undefined if minVal > maxVal."
     },
-    "genIType Clamp (genIType x, genIType y)": {
+    "genIType clamp(genIType x, genIType y)": {
         "prefix": ["clamp"],
         "body": ["clamp(${1:genIType x}, ${2:genIType y})"],
         "description": "Returns min(max(x, minVal), maxVal). Results are undefined if minVal > maxVal."
     },
-    "genIType Clamp (genIType x, int y)": {
+    "genIType clamp(genIType x, int y)": {
         "prefix": ["clamp"],
         "body": ["clamp(${1:genIType x}, ${2:int y})"],
         "description": "Returns min(max(x, minVal), maxVal). Results are undefined if minVal > maxVal."
     },
-    "genUType Clamp (genUType x, genUType y)": {
+    "genUType clamp(genUType x, genUType y)": {
         "prefix": ["clamp"],
         "body": ["clamp(${1:genUType x}, ${2:genUType y})"],
         "description": "Returns min(max(x, minVal), maxVal). Results are undefined if minVal > maxVal."
     },
-    "genUType Clamp (genUType x, uint y)": {
+    "genUType clamp(genUType x, uint y)": {
         "prefix": ["clamp"],
         "body": ["clamp(${1:genUType x}, ${2:uint y})"],
         "description": "Returns min(max(x, minVal), maxVal). Results are undefined if minVal > maxVal."
     },
 
 
-    "genFType Mix (genFType x, genFType y, genFType a)": {
+    "genFType mix(genFType x, genFType y, genFType a)": {
         "prefix": ["mix"],
         "body": ["mix(${1:genFType x}, ${2:genFType y}, ${3:genFType a})"],
         "description": "Returns the linear blend of x and y, i.e., x · (1 - a) + y · a."
     },
-    "genFType Mix (genFType x, genFType y, float a)": {
+    "genFType mix(genFType x, genFType y, float a)": {
         "prefix": ["mix"],
         "body": ["mix(${1:genFType x}, ${2:genFType y}, ${3:float a})"],
         "description": "Returns the linear blend of x and y, i.e., x · (1 - a) + y · a."
     },
-    "genDType Mix (genDType x, genDType y, genDType a)": {
+    "genDType mix(genDType x, genDType y, genDType a)": {
         "prefix": ["mix"],
         "body": ["mix(${1:genDType x}, ${2:genDType y}, ${3:genDType a})"],
         "description": "Returns the linear blend of x and y, i.e., x · (1 - a) + y · a."
     },
-    "genDType Mix (genDType x, genDType y, double a)": {
+    "genDType mix(genDType x, genDType y, double a)": {
         "prefix": ["mix"],
         "body": ["mix(${1:genDType x}, ${2:genDType y}, ${3:double a})"],
         "description": "Returns the linear blend of x and y, i.e., x · (1 - a) + y · a."
     },
 
-    "genFType Mix (genFType x, genFType y, genBType a)": {
+    "genFType mix(genFType x, genFType y, genBType a)": {
         "prefix": ["mix"],
         "body": ["mix(${1:genFType x}, ${2:genFType y}, ${3:genBType a})"],
         "description": "Selects which vector each returned component comes from. For a component of a that is false, the corresponding component of x is returned. For a component of a that is true, the corresponding component of y is returned. Components of x and y that are not selected are allowed to be invalid floating-point values and will have no effect on the results. Thus, this provides different functionality than, for example, genFType mix(genFType x, genFType y, genFType(a)) where a is a Boolean vector."
     },
-    "genDType Mix (genDType x, genDType y, genBType a)": {
+    "genDType mix(genDType x, genDType y, genBType a)": {
         "prefix": ["mix"],
         "body": ["mix(${1:genDType x}, ${2:genDType y}, ${3:genBType a})"],
         "description": "Selects which vector each returned component comes from. For a component of a that is false, the corresponding component of x is returned. For a component of a that is true, the corresponding component of y is returned. Components of x and y that are not selected are allowed to be invalid floating-point values and will have no effect on the results. Thus, this provides different functionality than, for example, genFType mix(genFType x, genFType y, genFType(a)) where a is a Boolean vector."
     },
-    "genIType Mix (genIType x, genIType y, genBType a)": {
+    "genIType mix(genIType x, genIType y, genBType a)": {
         "prefix": ["mix"],
         "body": ["mix(${1:genIType x}, ${2:genIType y}, ${3:genBType a})"],
         "description": "Selects which vector each returned component comes from. For a component of a that is false, the corresponding component of x is returned. For a component of a that is true, the corresponding component of y is returned. Components of x and y that are not selected are allowed to be invalid floating-point values and will have no effect on the results. Thus, this provides different functionality than, for example, genFType mix(genFType x, genFType y, genFType(a)) where a is a Boolean vector."
     },
-    "genUType Mix (genUType x, genUType y, genBType a)": {
+    "genUType mix(genUType x, genUType y, genBType a)": {
         "prefix": ["mix"],
         "body": ["mix(${1:genUType x}, ${2:genUType y}, ${3:genBType a})"],
         "description": "Selects which vector each returned component comes from. For a component of a that is false, the corresponding component of x is returned. For a component of a that is true, the corresponding component of y is returned. Components of x and y that are not selected are allowed to be invalid floating-point values and will have no effect on the results. Thus, this provides different functionality than, for example, genFType mix(genFType x, genFType y, genFType(a)) where a is a Boolean vector."
     },
-    "genBType Mix (genBType x, genBType y, genBType a)": {
+    "genBType mix(genBType x, genBType y, genBType a)": {
         "prefix": ["mix"],
         "body": ["mix(${1:genBType x}, ${2:genBType y}, ${3:genBType a})"],
         "description": "Selects which vector each returned component comes from. For a component of a that is false, the corresponding component of x is returned. For a component of a that is true, the corresponding component of y is returned. Components of x and y that are not selected are allowed to be invalid floating-point values and will have no effect on the results. Thus, this provides different functionality than, for example, genFType mix(genFType x, genFType y, genFType(a)) where a is a Boolean vector."
     },
 
 
-    "genFType Step (genFType edge, genFType x)": {
+    "genFType step(genFType edge, genFType x)": {
         "prefix": ["step"],
         "body": ["step(${1:genFType edge}, ${2:genFType x})"],
         "description": "Returns 0.0 if x < edge; otherwise it returns 1.0."
     },
-    "genFType Step (float edge, genFType x)": {
+    "genFType step(float edge, genFType x)": {
         "prefix": ["step"],
         "body": ["step(${1:float edge}, ${2:genFType x})"],
         "description": "Returns 0.0 if x < edge; otherwise it returns 1.0."
     },
-    "genDType Step (genDType edge, genDType x)": {
+    "genDType step(genDType edge, genDType x)": {
         "prefix": ["step"],
         "body": ["step(${1:genDType edge}, ${2:genDType x})"],
         "description": "Returns 0.0 if x < edge; otherwise it returns 1.0."
     },
-    "genDType Step (double edge, genDType x)": {
+    "genDType step(double edge, genDType x)": {
         "prefix": ["step"],
         "body": ["step(${1:double edge}, ${2:genDType x})"],
         "description": "Returns 0.0 if x < edge; otherwise it returns 1.0."
     },
 
 
-    "genFType Smoothstep (genFType edge0, genFType edge1 genFType x)": {
+    "genFType smoothstep(genFType edge0, genFType edge1 genFType x)": {
         "prefix": ["smoothstep"],
         "body": ["smoothstep(${1:genFType edge0}, ${genFType edge1}, ${3:genFType x})"],
         "description": "Returns 0.0 if x ≤ edge0 and 1.0 if x ≥ edge1, and performs smooth Hermite interpolation between 0 and 1 when edge0 < x < edge1. This is useful in cases where you would want a threshold function with a smooth transition."
     },
-    "genFType Smoothstep (float edge0, float edge1, genFType x)": {
+    "genFType smoothstep(float edge0, float edge1, genFType x)": {
         "prefix": ["smoothstep"],
         "body": ["smoothstep(${1:float edge0}, ${2:float edge1}, ${3:genFType x})"],
         "description": "Returns 0.0 if x ≤ edge0 and 1.0 if x ≥ edge1, and performs smooth Hermite interpolation between 0 and 1 when edge0 < x < edge1. This is useful in cases where you would want a threshold function with a smooth transition."
     },
-    "genDType Smoothstep (genDType edge0, genDType edge1 genDType x)": {
+    "genDType smoothstep(genDType edge0, genDType edge1 genDType x)": {
         "prefix": ["smoothstep"],
         "body": ["smoothstep(${1:genDType edge0}, ${genDType edge1}, ${3:genDType x})"],
         "description": "Returns 0.0 if x ≤ edge0 and 1.0 if x ≥ edge1, and performs smooth Hermite interpolation between 0 and 1 when edge0 < x < edge1. This is useful in cases where you would want a threshold function with a smooth transition."
     },
-    "genDType Smoothstep (double edge0, double edge1, genDType x)": {
+    "genDType smoothstep(double edge0, double edge1, genDType x)": {
         "prefix": ["smoothstep"],
         "body": ["smoothstep(${1:double edge0}, ${2:double edge1}, ${3:genDType x})"],
         "description": "Returns 0.0 if x ≤ edge0 and 1.0 if x ≥ edge1, and performs smooth Hermite interpolation between 0 and 1 when edge0 < x < edge1. This is useful in cases where you would want a threshold function with a smooth transition."
     },
 
 
-    "genBType Isnan (genFType x)": {
+    "genBType isnan(genFType x)": {
         "prefix": ["isnan"],
         "body": ["isnan(${1:genFType x})"],
         "description": "Returns true if x holds a NaN. Returns false otherwise. Always returns false if NaNs are not implemented."
     },
-    "genBType Isnan (genDType x)": {
+    "genBType isnan(genDType x)": {
         "prefix": ["isnan"],
         "body": ["isnan(${1:genDType x})"],
         "description": "Returns true if x holds a NaN. Returns false otherwise. Always returns false if NaNs are not implemented."
     },
 
-    "genBType Isinf (genFType x)": {
+    "genBType isinf(genFType x)": {
         "prefix": ["isinf"],
         "body": ["isinf(${1:genFType x})"],
         "description": "Returns true if x holds a positive infinity or negative infinity. Returns false otherwise."
     },
-    "genBType Isinf (genDType x)": {
+    "genBType isinf(genDType x)": {
         "prefix": ["isinf"],
         "body": ["isinf(${1:genDType x})"],
         "description": "Returns true if x holds a positive infinity or negative infinity. Returns false otherwise."
     },
 
-    "genIType FloatBitsToInt (highp genFType value)": {
+    "genIType floatBitsToInt(highp genFType value)": {
         "prefix": ["floatBitsToInt"],
         "body": ["floatBitsToInt(${1:highp genFType value})"],
         "description": ["Returns a signed or unsigned integer value representing the encoding of a floating-point value. The float value’s bit-level representation is preserved."]
     },
-    "genUType FloatBitsToInt (highp genFType value)": {
+    "genUType floatBitsToInt(highp genFType value)": {
         "prefix": ["floatBitsToInt"],
         "body": ["floatBitsToInt(${1:highp genFType value})"],
         "description": ["Returns a signed or unsigned integer value representing the encoding of a floating-point value. The float value’s bit-level representation is preserved."]
     },
-    "genFType IntBitsToFloat (highp genIType value)": {
+    "genFType intBitsToFloat(highp genIType value)": {
         "prefix": ["intBitToFloats"],
         "body": ["intBitToFloats(${1:highp genIType value})"],
         "description": ["Returns a floating-point value corresponding to a signed or unsigned integer encoding of a floating-point value. If a NaN is passed in, it will not signal, and the resulting value is unspecified. If an Inf is passed in, the resulting value is the corresponding Inf. Otherwise, the bit-level representation is preserved."]
     },
-    "genFType IntBitsToFloat (highp genUType value)": {
+    "genFType intBitsToFloat(highp genUType value)": {
         "prefix": ["intBitToFloats"],
         "body": ["intBitToFloats(${1:highp genUType value})"],
         "description": ["Returns a floating-point value corresponding to a signed or unsigned integer encoding of a floating-point value. If a NaN is passed in, it will not signal, and the resulting value is unspecified. If an Inf is passed in, the resulting value is the corresponding Inf. Otherwise, the bit-level representation is preserved."]
     },
 
 
-    "genFType Fma (genFType a, genFType b, genFType c)": {
+    "genFType fma(genFType a, genFType b, genFType c)": {
         "prefix": ["fma"],
         "body": ["fma(${1:genFType a}, ${2:genFType b}, ${3:genFType c})"],
         "description": ["Computes and returns a * b + c. In uses where the return value is eventually consumed by a variable declared as precise: • fma() is considered a single operation, whereas the expression a * b + c consumed by a variable declared precise is considered two operations. • The precision of fma() can differ from the precision of the expression a * b + c. • fma() will be computed with the same precision as any other fma() consumed by a precise variable, giving invariant results for the same input values of a, b, and c. Otherwise, in the absence of precise consumption, there are no special constraints on the number of operations or difference in precision between fma() and the expression a * b + c."]
     },
-    "genDType Fma (genDType a, genDType b, genDType c)": {
+    "genDType fma(genDType a, genDType b, genDType c)": {
         "prefix": ["fma"],
         "body": ["fma(${1:genDType a}, ${2:genDType b}, ${3:genDType c})"],
         "description": ["Computes and returns a * b + c. In uses where the return value is eventually consumed by a variable declared as precise: • fma() is considered a single operation, whereas the expression a * b + c consumed by a variable declared precise is considered two operations. • The precision of fma() can differ from the precision of the expression a * b + c. • fma() will be computed with the same precision as any other fma() consumed by a precise variable, giving invariant results for the same input values of a, b, and c. Otherwise, in the absence of precise consumption, there are no special constraints on the number of operations or difference in precision between fma() and the expression a * b + c."]
     },
 
-    "genFType Frexp (highp genFType x, out highp genIType exp)": {
+    "genFType frexp(highp genFType x, out highp genIType exp)": {
         "prefix": ["frexp"],
         "body": ["frexp(${1:highp genFType x}, ${2:out highp genIType exp})"],
         "description": ["Splits x into a floating-point significand in the range [0.5,1.0], and an integral exponent of two, such that x = significant · 2^exponent The significand is returned by the function and the exponent is returned in the parameter exp. For a floating-point value of zero, the significand and exponent are both zero. If an implementation supports signed zero, an input value of minus zero should return a significand of minus zero. For a floating-point value that is an infinity or is not a number, the results are undefined. If the input x is a vector, this operation is performed in a component-wise manner; the value returned by the function and the value written to exp are vectors with the same number of components as x."]
     },
-    "genDType Frexp (genDType x, out genIType exp)": {
+    "genDType frexp(genDType x, out genIType exp)": {
         "prefix": ["frexp"],
         "body": ["frexp(${1:genDType x}, ${2:out genIType exp})"],
         "description": ["Splits x into a floating-point significand in the range [0.5,1.0], and an integral exponent of two, such that x = significant · 2^exponent The significand is returned by the function and the exponent is returned in the parameter exp. For a floating-point value of zero, the significand and exponent are both zero. If an implementation supports signed zero, an input value of minus zero should return a significand of minus zero. For a floating-point value that is an infinity or is not a number, the results are undefined. If the input x is a vector, this operation is performed in a component-wise manner; the value returned by the function and the value written to exp are vectors with the same number of components as x."]
     },
 
-    "genFType Idexp (highp genFType x, highp genIType exp)": {
+    "genFType idexp(highp genFType x, highp genIType exp)": {
         "prefix": ["idexp"],
         "body": ["idexp(${1:highp genFType x}, ${2:highp genIType exp})"],
         "description": ["Builds a floating-point number from x and the corresponding integral exponent of two in exp, returning: significand · 2^exponent If this product is too large to be represented in the floating-point type, the result is undefined. If exp is greater than +128 (single-precision) or +1024 (double-precision), the value returned is undefined. If exp is less than -126 (singleprecision) or -1022 (double-precision), the value returned may be flushed to zero. Additionally, splitting the value into a significand and exponent using frexp() and then reconstructing a floating-point value using ldexp() should yield the original input for zero and all finite nondenormalized values. If the input x is a vector, this operation is performed in a component-wise manner; the value passed in exp and returned by the function are vectors with the same number of components as x."]
     },
-    "genDType Idexp (genDType x, genIType exp)": {
+    "genDType idexp(genDType x, genIType exp)": {
         "prefix": ["idexp"],
         "body": ["idexp(${1:genDType x}, ${2:genIType exp})"],
         "description": ["Builds a floating-point number from x and the corresponding integral exponent of two in exp, returning: significand · 2^exponent If this product is too large to be represented in the floating-point type, the result is undefined. If exp is greater than +128 (single-precision) or +1024 (double-precision), the value returned is undefined. If exp is less than -126 (singleprecision) or -1022 (double-precision), the value returned may be flushed to zero. Additionally, splitting the value into a significand and exponent using frexp() and then reconstructing a floating-point value using ldexp() should yield the original input for zero and all finite nondenormalized values. If the input x is a vector, this operation is performed in a component-wise manner; the value passed in exp and returned by the function are vectors with the same number of components as x."]
@@ -595,65 +595,65 @@
 
 
 
-    "highp uint PackUnorm2x16": {
+    "highp uint packUnorm2x16": {
         "prefix": ["packUnorm2x16"],
         "body": ["packUnorm2x16(${1:vec2 v})"],
         "description": "First, converts each component of the normalized floating-point value v into 16-bit (2x16) or 8-bit (4x8) integer values. Then, the results are packed into the returned 32-bit unsigned integer. The conversion for component c of v to fixed point is done as follows: round(clamp(c,0,+1) * 65535.0). The first component of the vector will be written to the least significant bits of the output; the last component will be written to the most significant bits."
     },
-    "highp uint PackSnorm2x16": {
+    "highp uint packSnorm2x16": {
         "prefix": ["packSnorm2x16"],
         "body": ["packSnorm2x16(${1:vec2 v})"],
         "description": "First, converts each component of the normalized floating-point value v into 16-bit (2x16) or 8-bit (4x8) integer values. Then, the results are packed into the returned 32-bit unsigned integer. The conversion for component c of v to fixed point is done as follows: round(clamp(c,-1,+1) * 32767.0). The first component of the vector will be written to the least significant bits of the output; the last component will be written to the most significant bits."
     },
-    "uint PackUnorm4x8": {
+    "uint packUnorm4x8": {
         "prefix": ["packUnorm4x8"],
         "body": ["packUnorm4x8(${1:vec4 v})"],
         "description": "First, converts each component of the normalized floating-point value v into 16-bit (2x16) or 8-bit (4x8) integer values. Then, the results are packed into the returned 32-bit unsigned integer. The conversion for component c of v to fixed point is done as follows: round(clamp(c,0,+1) * 255.0). The first component of the vector will be written to the least significant bits of the output; the last component will be written to the most significant bits."
     },
-    "uint PackSnorm4x8": {
+    "uint packSnorm4x8": {
         "prefix": ["packSnorm4x8"],
         "body": ["packSnorm4x8(${1:vec4 v})"],
         "description": "First, converts each component of the normalized floating-point value v into 16-bit (2x16) or 8-bit (4x8) integer values. Then, the results are packed into the returned 32-bit unsigned integer. The conversion for component c of v to fixed point is done as follows: round(clamp(c,-1,+1) * 127.0). The first component of the vector will be written to the least significant bits of the output; the last component will be written to the most significant bits."
     },
 
-    "vec2 UnpackUnorm2x16": {
+    "vec2 unpackUnorm2x16": {
         "prefix": ["unpackUnorm2x16"],
         "body": ["unpackUnorm2x16(${1:highp uint p})"],
         "description": "First, unpacks a single 32-bit unsigned integer p into a pair of 16-bit unsigned integers, a pair of 16-bit signed integers, four 8-bit unsigned integers, or four 8-bit signed integers, respectively. Then, each component is converted to a normalized floating-point value to generate the returned two- or four-component vector. The conversion for unpacked fixed-point value f to floating-point is done as follows: (f / 65535.0). The first component of the returned vector will be extracted from the least significant bits of the input; the last component will be extracted from the most significant bits."
     },
-    "vec2 UnpackSnorm2x16": {
+    "vec2 unpackSnorm2x16": {
         "prefix": ["unpackSnorm2x16"],
         "body": ["unpackSnorm2x16(${1:highp uint p})"],
         "description": "First, unpacks a single 32-bit unsigned integer p into a pair of 16-bit unsigned integers, a pair of 16-bit signed integers, four 8-bit unsigned integers, or four 8-bit signed integers, respectively. Then, each component is converted to a normalized floating-point value to generate the returned two- or four-component vector. The conversion for unpacked fixed-point value f to floating-point is done as follows: clamp(f / 32767.0,-1,+1). The first component of the returned vector will be extracted from the least significant bits of the input; the last component will be extracted from the most significant bits."
     },
-    "vec4 UnpackUnorm4x8": {
+    "vec4 unpackUnorm4x8": {
         "prefix": ["unpackUnorm4x8"],
         "body": ["unpackUnorm4x8(${1:highp uint p})"],
         "description": "First, unpacks a single 32-bit unsigned integer p into a pair of 16-bit unsigned integers, a pair of 16-bit signed integers, four 8-bit unsigned integers, or four 8-bit signed integers, respectively. Then, each component is converted to a normalized floating-point value to generate the returned two- or four-component vector. The conversion for unpacked fixed-point value f to floating-point is done as follows: (f / 255.0). The first component of the returned vector will be extracted from the least significant bits of the input; the last component will be extracted from the most significant bits."
     },
-    "vec4 UnpackSnorm4x8": {
+    "vec4 unpackSnorm4x8": {
         "prefix": ["unpackSnorm4x8"],
         "body": ["unpackSnorm4x8(${1:highp uint p})"],
         "description": "First, unpacks a single 32-bit unsigned integer p into a pair of 16-bit unsigned integers, a pair of 16-bit signed integers, four 8-bit unsigned integers, or four 8-bit signed integers, respectively. Then, each component is converted to a normalized floating-point value to generate the returned two- or four-component vector. The conversion for unpacked fixed-point value f to floating-point is done as follows: clamp(f / 127.0,-1,+1). The first component of the returned vector will be extracted from the least significant bits of the input; the last component will be extracted from the most significant bits."
     },
 
-    "uint PackHalf2x16":{
+    "uint packHalf2x16":{
         "prefix": ["packHalf2x16"],
         "body": ["packHalf2x16(${1:vec2 v})"],
         "description": "Returns an unsigned integer obtained by converting the components of a two-component floating-point vector to the 16-bit floating-point representation of the API, and then packing these two 16-bit integers into a 32-bit unsigned integer. The first vector component specifies the 16 leastsignificant bits of the result; the second component specifies the 16 most-significant bits."
     },
-    "uint UnpackHalf2x16":{
+    "uint unpackHalf2x16":{
         "prefix": ["unpackHalf2x16"],
         "body": ["unpackHalf2x16(${1:uint v})"],
         "description": "Returns a two-component floating-point vector with components obtained by unpacking a 32-bit unsigned integer into a pair of 16-bit values, interpreting those values as 16-bit floating-point numbers according to the API, and converting them to 32-bit floating-point values. The first component of the vector is obtained from the 16 least-significant bits of v; the second component is obtained from the 16 mostsignificant bits of v."
     },
 
-    "double PackDouble2x32":{
+    "double packDouble2x32":{
         "prefix": ["packDouble2x32"],
         "body": ["packDouble2x32(${1:uvec2 v})"],
         "description": "Returns a double-precision value obtained by packing the components of v into a 64-bit value. If an IEEE 754 Inf or NaN is created, it will not signal, and the resulting floating-point value is unspecified. Otherwise, the bit-level representation of v is preserved. The first vector component specifies the 32 least significant bits; the second component specifies the 32 most significant bits."
     },
-    "double UnpackDouble2x32":{
+    "double unpackDouble2x32":{
         "prefix": ["unpackDouble2x32"],
         "body": ["unpackDouble2x32(${1:double v})"],
         "description": "Returns a two-component unsigned integer vector representation of v. The bit-level representation of v is preserved. The first component of the vector contains the 32 least significant bits of the double; the second component consists of the 32 most significant bits."
@@ -662,98 +662,98 @@
 
 
 
-    "float Length (genFType x)":{
+    "float length(genFType x)":{
         "prefix": ["length"],
         "body": ["length(${1:genFType x})"],
         "description": "Returns the length of vector x."
     },
-    "double Length (genDType x)":{
+    "double length(genDType x)":{
         "prefix": ["length"],
         "body": ["length(${1:genDType x})"],
         "description": "Returns the length of vector x."
     },
 
-    "float Distance (genFType x, genFType y)":{
+    "float distance(genFType x, genFType y)":{
         "prefix": ["length"],
         "body": ["length(${1:genFType x}, ${2:genFType y})"],
         "description": "Returns the distance between p0 and p1, i.e., length(p0 - p1)"
     },
-    "double Distance (genDType x, genDType y)":{
+    "double distance(genDType x, genDType y)":{
         "prefix": ["length"],
         "body": ["length(${1:genDType x}, ${2:genDType y})"],
         "description": "Returns the distance between p0 and p1, i.e., length(p0 - p1)"
     },
 
-    "float Dot (genFType x, genFType y)":{
+    "float dot(genFType x, genFType y)":{
         "prefix": ["dot"],
         "body": ["dot(${1:genFType x}, ${2:genFType y})"],
         "description": "Returns the dot product of x and y, i.e., x0 · y0 + x1 · y1 + …"
     },
-    "double Dot (genDType x, genDType y)":{
+    "double dot(genDType x, genDType y)":{
         "prefix": ["dot"],
         "body": ["dot(${1:genDType x}, ${2:genDType y})"],
         "description": "Returns the dot product of x and y, i.e., x0 · y0 + x1 · y1 + …"
     },
 
-    "vec3 Cross (vec3 x, vec3 y)":{
+    "vec3 cross(vec3 x, vec3 y)":{
         "prefix": ["cross"],
         "body": ["cross(${1:vec3 x}, ${2:vec3 y})"],
         "description": "Returns the cross product of x and y, i.e., (x1 · y2 - y1 · x2 , x2 · y0 - y2 x0 , x0 · y1 - y0 · x1)."
     },
-    "dvec3 Cross (dvec3 x, dvec3 y)":{
+    "dvec3 cross(dvec3 x, dvec3 y)":{
         "prefix": ["cross"],
         "body": ["cross(${1:dvec3 x}, ${2:dvec3 y})"],
         "description": "Returns the cross product of x and y, i.e., (x1 · y2 - y1 · x2 , x2 · y0 - y2 x0 , x0 · y1 - y0 · x1)."
     },
 
-    "float Normalize (genFType x)":{
+    "float normalize(genFType x)":{
         "prefix": ["normalize"],
         "body": ["normalize(${1:genFType x})"],
         "description": "Returns a vector in the same direction as x but with a length of 1, i.e. x / length(x)."
     },
-    "double Normalize (genDType x)":{
+    "double normalize(genDType x)":{
         "prefix": ["normalize"],
         "body": ["normalize(${1:genDType x})"],
         "description": "Returns a vector in the same direction as x but with a length of 1, i.e. x / length(x)."
     },
 
 
-    "vec4 Ftransform": {
+    "vec4 ftransform": {
         "prefix": ["ftransform"],
         "body": ["ftransform()"],
         "description": "Available only when using the compatibility profile. For core OpenGL, use invariant. For vertex shaders only. This function will ensure that the incoming vertex value will be transformed in a way that produces exactly the same result as would be produced by OpenGL’s fixed functionality transform. It is intended to be used to compute gl_Position, e.g. gl_Position = ftransform() This function should be used, for example, when an application is rendering the same geometry in separate passes, and one pass uses the fixed functionality path to render and another pass uses programmable shaders."
     },
 
 
-    "genFType Faceforward (genFType N, genFType I, genFType Nref)":{
+    "genFType faceforward(genFType N, genFType I, genFType Nref)":{
         "prefix": ["faceforward"],
         "body": ["faceforward(${1:genFType N}, ${2:genFType I}, ${3:genFType Nref})"],
         "description": "If dot(Nref, I) < 0 return N, otherwise return -N."
     },
-    "genDType Faceforward (genDType N, genDType I, genDType Nref)":{
+    "genDType faceforward(genDType N, genDType I, genDType Nref)":{
         "prefix": ["faceforward"],
         "body": ["faceforward(${1:genDType N}, ${2:genDType I}, ${3:genFType Nref)"],
         "description": "If dot(Nref, I) < 0 return N, otherwise return -N."
     },
 
-    "genFType Reflect (genFType I, genFType N)":{
+    "genFType reflect(genFType I, genFType N)":{
         "prefix": ["reflect"],
         "body": ["reflect(${1:genFType I}, ${2:genFType N})"],
         "description": "For the incident vector I and surface orientation N, returns the reflection direction: I - 2 · dot(N, I) · N. N must already be normalized in order to achieve the desired result."
     },
-    "genDType Reflect (genDType I, genDType N)":{
+    "genDType reflect(genDType I, genDType N)":{
         "prefix": ["reflect"],
         "body": ["reflect(${1:genDType I}, ${2:genDType N}"],
         "description": "For the incident vector I and surface orientation N, returns the reflection direction: I - 2 · dot(N, I) · N. N must already be normalized in order to achieve the desired result."
     },
 
 
-    "genFType Refract (genFType I, genFType N, float eta)":{
+    "genFType refract(genFType I, genFType N, float eta)":{
         "prefix": ["refract"],
         "body": ["refract(${1:genFType I}, ${2:genFType N}, ${3:float eta})"],
         "description": "For the incident vector I and surface normal N, and the ratio of indices of refraction eta, return the refraction vector."
     },
-    "genDType Refract (genDType I, genDType N, double eta)":{
+    "genDType refract(genDType I, genDType N, double eta)":{
         "prefix": ["refract"],
         "body": ["refract(${1:genDType I}, ${2:genDType N}, ${3:double eta})"],
         "description": "For the incident vector I and surface normal N, and the ratio of indices of refraction eta, return the refraction vector."
