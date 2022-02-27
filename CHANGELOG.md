@@ -2,10 +2,6 @@
 
 All notable changes to the "glsl-language-support" extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
 
 ## [0.0.1] - 2022-02-16
 ### Added
@@ -23,3 +19,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 ## [0.0.3] - 2022-02-20
 ### Added
 - Code snippets for: Common Functions, Floating-Point Pack and Unpack Functions, Geometric Functions.
+
+
+
+## [0.0.4] - 2022-02-27
+### Added
+- Pack of snippets for Textures query.

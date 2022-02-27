@@ -757,8 +757,1319 @@
         "prefix": ["refract"],
         "body": ["refract(${1:genDType I}, ${2:genDType N}, ${3:double eta})"],
         "description": "For the incident vector I and surface normal N, and the ratio of indices of refraction eta, return the refraction vector."
+    },
+
+
+
+
+    "mat matrixCompMult(mat x, mat y)": {
+        "prefix": ["matrixCompMult"],
+        "body": ["matrixCompMult(${1:mat x}, ${2:mat y})"],
+        "description": "Multiply matrix x by matrix y component-wise, i.e., result[i][j] is the scalar product of x[i][j] and y[i][j]. Note: to get linear algebraic matrix multiplication, use the multiply operator (*)."
+    },
+
+
+    "mat2 outerProduct(vec2 c, vec2 r)": {
+        "prefix": ["outerProduct"],
+        "body": ["outerProduct(${1:vec2 c}, ${2:vec2 r})"],
+        "description": "Treats the first parameter c as a column vector (matrix with one column) and the second parameter r as a row vector (matrix with one row) and does a linear algebraic matrix multiply c * r, yielding a matrix whose number of rows is the number of components in c and whose number of columns is the number of components in r."
+    },
+    "mat3 outerProduct(vec3 c, vec3 r)": {
+        "prefix": ["outerProduct"],
+        "body": ["outerProduct(${1:vec3 c}, ${2:vec3 r})"],
+        "description": "Treats the first parameter c as a column vector (matrix with one column) and the second parameter r as a row vector (matrix with one row) and does a linear algebraic matrix multiply c * r, yielding a matrix whose number of rows is the number of components in c and whose number of columns is the number of components in r."
+    },
+    "mat4 outerProduct(vec4 c, vec4 r)": {
+        "prefix": ["outerProduct"],
+        "body": ["outerProduct(${1:vec4 c}, ${2:vec4 r})"],
+        "description": "Treats the first parameter c as a column vector (matrix with one column) and the second parameter r as a row vector (matrix with one row) and does a linear algebraic matrix multiply c * r, yielding a matrix whose number of rows is the number of components in c and whose number of columns is the number of components in r."
+    },
+    "mat2x3 outerProduct(vec3 c, vec2 r)": {
+        "prefix": ["outerProduct"],
+        "body": ["outerProduct(${1:vec3 c}, ${2:vec2 r})"],
+        "description": "Treats the first parameter c as a column vector (matrix with one column) and the second parameter r as a row vector (matrix with one row) and does a linear algebraic matrix multiply c * r, yielding a matrix whose number of rows is the number of components in c and whose number of columns is the number of components in r."
+    },
+    "mat3x2 outerProduct(vec2 c, vec3 r)": {
+        "prefix": ["outerProduct"],
+        "body": ["outerProduct(${1:vec2 c}, ${2:vec3 r})"],
+        "description": "Treats the first parameter c as a column vector (matrix with one column) and the second parameter r as a row vector (matrix with one row) and does a linear algebraic matrix multiply c * r, yielding a matrix whose number of rows is the number of components in c and whose number of columns is the number of components in r."
+    },
+    "mat2x4 outerProduct(vec4 c, vec2 r)": {
+        "prefix": ["outerProduct"],
+        "body": ["outerProduct(${1:vec4 c}, ${2:vec2 r})"],
+        "description": "Treats the first parameter c as a column vector (matrix with one column) and the second parameter r as a row vector (matrix with one row) and does a linear algebraic matrix multiply c * r, yielding a matrix whose number of rows is the number of components in c and whose number of columns is the number of components in r."
+    },
+    "mat4x2 outerProduct(vec2 c, vec4 r)": {
+        "prefix": ["outerProduct"],
+        "body": ["outerProduct(${1:vec2 c}, ${2:vec4 r})"],
+        "description": "Treats the first parameter c as a column vector (matrix with one column) and the second parameter r as a row vector (matrix with one row) and does a linear algebraic matrix multiply c * r, yielding a matrix whose number of rows is the number of components in c and whose number of columns is the number of components in r."
+    },
+    "mat3x4 outerProduct(vec4 c, vec3 r)": {
+        "prefix": ["outerProduct"],
+        "body": ["outerProduct(${1:vec4 c}, ${2:vec3 r})"],
+        "description": "Treats the first parameter c as a column vector (matrix with one column) and the second parameter r as a row vector (matrix with one row) and does a linear algebraic matrix multiply c * r, yielding a matrix whose number of rows is the number of components in c and whose number of columns is the number of components in r."
+    },
+    "mat4x3 outerProduct(vec3 c, vec4 r)": {
+        "prefix": ["outerProduct"],
+        "body": ["outerProduct(${1:vec3 c}, ${2:vec4 r})"],
+        "description": "Treats the first parameter c as a column vector (matrix with one column) and the second parameter r as a row vector (matrix with one row) and does a linear algebraic matrix multiply c * r, yielding a matrix whose number of rows is the number of components in c and whose number of columns is the number of components in r."
+    },
+
+
+    "mat2 transpose(mat2 m)": {
+        "prefix": ["transpose"],
+        "body": ["transpose(${1:mat2 m})"],
+        "description": "Returns a matrix that is the transpose of m. The input matrix m is not modified."
+    },
+    "mat3 transpose(mat3 m)": {
+        "prefix": ["transpose"],
+        "body": ["transpose(${1:mat3 m})"],
+        "description": "Returns a matrix that is the transpose of m. The input matrix m is not modified."
+    },
+    "mat4 transpose(mat4 m)": {
+        "prefix": ["transpose"],
+        "body": ["transpose(${1:mat4 m})"],
+        "description": "Returns a matrix that is the transpose of m. The input matrix m is not modified."
+    },
+    "mat2x3 transpose(mat3x2 m)": {
+        "prefix": ["transpose"],
+        "body": ["transpose(${1:mat3x2 m})"],
+        "description": "Returns a matrix that is the transpose of m. The input matrix m is not modified."
+    },
+    "mat3x2 transpose(mat2x3 m)": {
+        "prefix": ["transpose"],
+        "body": ["transpose(${1:mat2x3 m})"],
+        "description": "Returns a matrix that is the transpose of m. The input matrix m is not modified."
+    },
+    "mat2x4 transpose(mat4x2 m)": {
+        "prefix": ["transpose"],
+        "body": ["transpose(${1:mat4x2 m})"],
+        "description": "Returns a matrix that is the transpose of m. The input matrix m is not modified."
+    },
+    "mat4x2 transpose(mat2x4 m)": {
+        "prefix": ["transpose"],
+        "body": ["transpose(${1:mat2x4 m})"],
+        "description": "Returns a matrix that is the transpose of m. The input matrix m is not modified."
+    },
+    "mat3x4 transpose(mat4x3 m)": {
+        "prefix": ["transpose"],
+        "body": ["transpose(${1:mat4x3 m})"],
+        "description": "Returns a matrix that is the transpose of m. The input matrix m is not modified."
+    },
+    "mat4x3 transpose(mat3x4 m)": {
+        "prefix": ["transpose"],
+        "body": ["transpose(${1:mat3x4 m})"],
+        "description": "Returns a matrix that is the transpose of m. The input matrix m is not modified."
+    },
+
+    "float determinant(mat2 m)": {
+        "prefix": ["determinant"],
+        "body": ["determinant(${1:mat2 m})"],
+        "description": "Returns the determinant of m."
+    },
+    "float determinant(mat3 m)": {
+        "prefix": ["determinant"],
+        "body": ["determinant(${1:mat3 m})"],
+        "description": "Returns the determinant of m."
+    },
+    "float determinant(mat4 m)": {
+        "prefix": ["determinant"],
+        "body": ["determinant(${1:mat4 m})"],
+        "description": "Returns the determinant of m."
+    },
+
+    "float inverse(mat2 m)": {
+        "prefix": ["inverse"],
+        "body": ["inverse(${1:mat2 m})"],
+        "description": "Returns a matrix that is the inverse of m. The input matrix m is not modified. The values in the returned matrix are undefined if m is singular or poorly-conditioned (nearly singular)."
+    },
+    "float inverse(mat3 m)": {
+        "prefix": ["inverse"],
+        "body": ["inverse(${1:mat3 m})"],
+        "description": "Returns a matrix that is the inverse of m. The input matrix m is not modified. The values in the returned matrix are undefined if m is singular or poorly-conditioned (nearly singular)."
+    },
+    "float inverse(mat4 m)": {
+        "prefix": ["inverse"],
+        "body": ["inverse(${1:mat4 m})"],
+        "description": "Returns a matrix that is the inverse of m. The input matrix m is not modified. The values in the returned matrix are undefined if m is singular or poorly-conditioned (nearly singular)."
+    },
+
+
+
+
+    "bvec lessThan(vec x, vec y)": {
+        "prefix": ["lessThan"],
+        "body": ["lessThan(${1:vec x}, ${2:vec y})"],
+        "description": "Returns the component-wise compare of x < y."
+    },
+    "bvec lessThan(ivec x, ivec y)": {
+        "prefix": ["lessThan"],
+        "body": ["lessThan(${1:ivec x}, ${2:ivec y})"],
+        "description": "Returns the component-wise compare of x < y."
+    },
+    "bvec lessThan(uvec x, uvec y)": {
+        "prefix": ["lessThan"],
+        "body": ["lessThan(${1:uvec x}, ${2:uvec y})"],
+        "description": "Returns the component-wise compare of x < y."
+    },
+
+    "bvec lessThanEqual(vec x, vec y)": {
+        "prefix": ["lessThanEqual"],
+        "body": ["lessThanEqual(${1:vec x}, ${2:vec y})"],
+        "description": "Returns the component-wise compare of x ≤ y."
+    },
+    "bvec lessThanEqual(ivec x, ivec y)": {
+        "prefix": ["lessThanEqual"],
+        "body": ["lessThanEqual(${1:ivec x}, ${2:ivec y})"],
+        "description": "Returns the component-wise compare of x ≤ y."
+    },
+    "bvec lessThanEqual(uvec x, uvec y)": {
+        "prefix": ["lessThanEqual"],
+        "body": ["lessThanEqual(${1:uvec x}, ${2:uvec y})"],
+        "description": "Returns the component-wise compare of x ≤ y."
+    },
+
+    "bvec greaterThan(vec x, vec y)": {
+        "prefix": ["greaterThan"],
+        "body": ["greaterThan(${1:vec x}, ${2:vec y})"],
+        "description": "Returns the component-wise compare of x > y."
+    },
+    "bvec greaterThan(ivec x, ivec y)": {
+        "prefix": ["greaterThan"],
+        "body": ["greaterThan(${1:ivec x}, ${2:ivec y})"],
+        "description": "Returns the component-wise compare of x > y."
+    },
+    "bvec greaterThan(uvec x, uvec y)": {
+        "prefix": ["greaterThan"],
+        "body": ["greaterThan(${1:uvec x}, ${2:uvec y})"],
+        "description": "Returns the component-wise compare of x > y."
+    },
+
+    "bvec greaterThanEqual(vec x, vec y)": {
+        "prefix": ["greaterThanEqual"],
+        "body": ["greaterThanEqual(${1:vec x}, ${2:vec y})"],
+        "description": "Returns the component-wise compare of x ≥ y."
+    },
+    "bvec greaterThanEqual(ivec x, ivec y)": {
+        "prefix": ["greaterThanEqual"],
+        "body": ["greaterThanEqual(${1:ivec x}, ${2:ivec y})"],
+        "description": "Returns the component-wise compare of x ≥ y."
+    },
+    "bvec greaterThanEqual(uvec x, uvec y)": {
+        "prefix": ["greaterThanEqual"],
+        "body": ["greaterThanEqual(${1:uvec x}, ${2:uvec y})"],
+        "description": "Returns the component-wise compare of x ≥ y."
+    },
+
+    "bvec equal(vec x, vec y)": {
+        "prefix": ["equal"],
+        "body": ["equal(${1:vec x}, ${2:vec y})"],
+        "description": "Returns the component-wise compare of x == y."
+    },
+    "bvec equal(ivec x, ivec y)": {
+        "prefix": ["equal"],
+        "body": ["equal(${1:ivec x}, ${2:ivec y})"],
+        "description": "Returns the component-wise compare of x == y."
+    },
+    "bvec equal(uvec x, uvec y)": {
+        "prefix": ["equal"],
+        "body": ["equal(${1:uvec x}, ${2:uvec y})"],
+        "description": "Returns the component-wise compare of x == y."
+    },
+    "bvec equal(bvec x, bvec y)": {
+        "prefix": ["equal"],
+        "body": ["equal(${1:bvec x}, ${2:bvec y})"],
+        "description": "Returns the component-wise compare of x == y."
+    },
+
+    "bvec notEqual(vec x, vec y)": {
+        "prefix": ["notEqual"],
+        "body": ["notEqual(${1:vec x}, ${2:vec y})"],
+        "description": "Returns the component-wise compare of x ≠ y."
+    },
+    "bvec notEqual(ivec x, ivec y)": {
+        "prefix": ["notEqual"],
+        "body": ["notEqual(${1:ivec x}, ${2:ivec y})"],
+        "description": "Returns the component-wise compare of x ≠ y."
+    },
+    "bvec notEqual(uvec x, uvec y)": {
+        "prefix": ["notEqual"],
+        "body": ["notEqual(${1:uvec x}, ${2:uvec y})"],
+        "description": "Returns the component-wise compare of x ≠ y."
+    },
+    "bvec notEqual(bvec x, bvec y)": {
+        "prefix": ["notEqual"],
+        "body": ["notEqual(${1:bvec x}, ${2:bvec y})"],
+        "description": "Returns the component-wise compare of x ≠ y."
+    },
+
+    "bool any(bvec x)": {
+        "prefix": ["any"],
+        "body": ["any(${1:bvec x})"],
+        "description": "Returns true if any component of x is true."
+    },
+
+    "bool all(bvec x)": {
+        "prefix": ["all"],
+        "body": ["all(${1:bvec x})"],
+        "description": "Returns true only if all components of x are true."
+    },
+
+    "bool not(bvec x)": {
+        "prefix": ["not"],
+        "body": ["not(${1:bvec x})"],
+        "description": "Returns the component-wise logical complement of x."
+    },
+
+
+
+
+    "genUType uaddCarry": {
+        "prefix": ["uaddCarry"],
+        "body": ["uaddCarry(${1:highp genUType x}, ${2:highp genUType y}, ${3:out lowp genUType carry})"],
+        "description": "Adds 32-bit unsigned integers x and y, returning the sum modulo 2^32. The value carry is set to zero if the sum was less than 2^32, or one otherwise."
+    },
+    "genUType usubBorrow": {
+        "prefix": ["usubBorrow"],
+        "body": ["usubBorrow(${1:highp genUType x}, ${2:highp genUType y}, ${3:out lowp genUType borrow})"],
+        "description": "Subtracts the 32-bit unsigned integer y from x, returning the difference if non-negative, or 2^32 plus the difference otherwise. The value borrow is set to zero if x ≥ y, or one otherwise."
+    },
+
+    "void umulExtended": {
+        "prefix": ["umulExtended"],
+        "body": ["umulExtended(${1:highp genUType x}, ${2:highp genUType y}, ${3:out highp genUType msb}, ${4:out highp genUType lsb})"],
+        "description": "Multiplies 32-bit unsigned or signed integers x and y, producing a 64-bit result. The 32 leastsignificant bits are returned in lsb. The 32 mostsignificant bits are returned in msb."
+    },
+    "void imulExtended": {
+        "prefix": ["imulExtended"],
+        "body": ["imulExtended(${1:highp genIType x}, ${2:highp genIType y}, ${3:out highp genIType msb}, ${4:out highp genIType lsb})"],
+        "description": "Multiplies 32-bit unsigned or signed integers x and y, producing a 64-bit result. The 32 leastsignificant bits are returned in lsb. The 32 mostsignificant bits are returned in msb."
+    },
+
+    
+    "genIType bitfieldExtract": {
+        "prefix": ["bitfieldExtract"],
+        "body": ["bitfieldExtract(${1:genIType value}, ${2:int offset}, ${3:int bits})"],
+        "description": "Extracts bits [offset, offset + bits - 1] from value, returning them in the least significant bits of the result. For unsigned data types, the most significant bits of the result will be set to zero. For signed data types, the most significant bits will be set to the value of bit offset + bits - 1. If bits is zero, the result will be zero. The result will be undefined if offset or bits is negative, or if the sum of offset and bits is greater than the number of bits used to store the operand. Note that for vector versions of bitfieldExtract(), a single pair of offset and bits values is shared for all components."
+    },
+    "genUType bitfieldExtract": {
+        "prefix": ["bitfieldExtract"],
+        "body": ["bitfieldExtract(${1:genUType value}, ${2:int offset}, ${3:int bits})"],
+        "description": "Extracts bits [offset, offset + bits - 1] from value, returning them in the least significant bits of the result. For unsigned data types, the most significant bits of the result will be set to zero. For signed data types, the most significant bits will be set to the value of bit offset + bits - 1. If bits is zero, the result will be zero. The result will be undefined if offset or bits is negative, or if the sum of offset and bits is greater than the number of bits used to store the operand. Note that for vector versions of bitfieldExtract(), a single pair of offset and bits values is shared for all components."
+    },
+
+    "genIType bitfieldInsert": {
+        "prefix": ["bitfieldInsert"],
+        "body": ["bitfieldInsert(${1:genIType base}, ${2:genIType insert}, ${3:int offset}, ${4:int bits})"],
+        "description": "Inserts the bits least significant bits of insert into base. The result will have bits [offset, offset + bits - 1] taken from bits [0, bits - 1] of insert, and all other bits taken directly from the corresponding bits of base. If bits is zero, the result will simply be base. The result will be undefined if offset or bits is negative, or if the sum of offset and bits is greater than the number of bits used to store the operand. Note that for vector versions of bitfieldInsert(), a single pair of offset and bits values is shared for all components."
+    },
+    "genUType bitfieldInsert": {
+        "prefix": ["bitfieldInsert"],
+        "body": ["bitfieldInsert(${1:genUType base}, ${2:genUType insert}, ${3:int offset}, ${4:int bits})"],
+        "description": "Inserts the bits least significant bits of insert into base. The result will have bits [offset, offset + bits - 1] taken from bits [0, bits - 1] of insert, and all other bits taken directly from the corresponding bits of base. If bits is zero, the result will simply be base. The result will be undefined if offset or bits is negative, or if the sum of offset and bits is greater than the number of bits used to store the operand. Note that for vector versions of bitfieldInsert(), a single pair of offset and bits values is shared for all components."
+    },
+
+    "genIType bitfieldReverse": {
+        "prefix": ["bitfieldReverse"],
+        "body": ["bitfieldReverse(${1:highp genIType value})"],
+        "description": "Reverses the bits of value. The bit numbered n of the result will be taken from bit (bits - 1) - n of value, where bits is the total number of bits used to represent value."
+    },
+    "genUType bitfieldReverse": {
+        "prefix": ["bitfieldReverse"],
+        "body": ["bitfieldReverse(${1:highp genUType value})"],
+        "description": "Reverses the bits of value. The bit numbered n of the result will be taken from bit (bits - 1) - n of value, where bits is the total number of bits used to represent value."
+    },
+
+    "genIType bitCount(genIType value)": {
+        "prefix": ["bitCount"],
+        "body": ["bitCount(${1:genIType value})"],
+        "description": "Returns the number of one bits in the binary representation of value."
+    },
+    "genIType bitCount(genUType value)": {
+        "prefix": ["bitCount"],
+        "body": ["bitCount(${1:genUType value})"],
+        "description": "Returns the number of one bits in the binary representation of value."
+    },
+
+    "genIType findLSB(genIType value)": {
+        "prefix": ["findLSB"],
+        "body": ["findLSB(${1:genIType value})"],
+        "description": "Returns the bit number of the least significant one bit in the binary representation of value. If value is zero, -1 will be returned."
+    },
+    "genIType findLSB(genUType value)": {
+        "prefix": ["findLSB"],
+        "body": ["findLSB(${1:genUType value})"],
+        "description": "Returns the bit number of the least significant one bit in the binary representation of value. If value is zero, -1 will be returned."
+    },
+
+    "genIType findMSB(highp genIType value)": {
+        "prefix": ["findMSB"],
+        "body": ["findMSB(${1:highp genIType value})"],
+        "description": "Returns the bit number of the most significant bit in the binary representation of value. For positive integers, the result will be the bit number of the most significant one bit. For negative integers, the result will be the bit number of the most significant zero bit. For a value of zero or negative one, -1 will be returned."
+    },
+    "genIType findMSB(highp genUType value)": {
+        "prefix": ["findMSB"],
+        "body": ["findMSB(${1:highp genUType value})"],
+        "description": "Returns the bit number of the most significant bit in the binary representation of value. For positive integers, the result will be the bit number of the most significant one bit. For negative integers, the result will be the bit number of the most significant zero bit. For a value of zero or negative one, -1 will be returned."
+    },
+
+
+
+
+    "int textureSize(gsampler1D sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsampler1D sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec2 textureSize(gsampler2D sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsampler2D sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec3 textureSize(gsampler3D sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsampler1D sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "int textureSize(sampler1DShadow sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:sampler1DShadow sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec2 textureSize(sampler2DShadow sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:sampler2DShadow sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec2 textureSize(samplerCubeShadow sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:samplerCubeShadow sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec3 textureSize(gsamplerCubeArray sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsamplerCubeArray sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec3 textureSize(samplerCubeArrayShadow sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:samplerCubeArrayShadow sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec2 textureSize(gsampler2DRect sampler)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsampler2DRect sampler})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec2 textureSize(sampler2DRectShadow sampler)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:sampler2DRectShadow sampler})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec2 textureSize(gsampler1DArray sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsampler1DArray sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec2 textureSize(sampler1DArrayShadow sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:sampler1DArrayShadow sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec3 textureSize(gsampler2DArray sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsampler2DArray sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec3 textureSize(sampler2DArrayShadow sampler, int lod)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:sampler2DArrayShadow sampler}, ${2:int lod})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "int textureSize(gsamplerBuffer sampler)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsamplerBuffer sampler})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec2 textureSize(gsampler2DMS sampler)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsampler2DMS sampler})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+    "ivec3 textureSize(gsampler2DMSArray sampler)": {
+        "prefix": ["textureSize"],
+        "body": ["textureSize(${1:gsampler2DMSArray sampler})"],
+        "description": "Returns the dimensions of level lod (if present) for the texture bound to sampler, as described in section 8.11 “Texture Queries” of the OpenGL Specification. The components in the return value are filled in, in order, with the width, height, and depth of the texture. For the array forms, the last component of the return value is the number of layers in the texture array, or the number of cubes in the texture cube map array."
+    },
+
+
+    "vec2 textureQueryLod(gsampler1D sampler, float P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:gsampler1D sampler}, ${2:float P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(gsampler2D sampler, vec2 P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:gsampler2D sampler}, ${2:vec2 P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined." 
+    },
+    "vec2 textureQueryLod(gsampler3D sampler, vec3 P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:gsampler3D sampler}, ${2:vec3 P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(gsamplerCube sampler, vec3 P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:gsamplerCube sampler}, ${2:vec3 P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(gsampler1DArray sampler, float P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:gsampler1DArray sampler}, ${2:float P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(gsampler2DArray sampler, vec2 P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:gsampler2DArray sampler}, ${2:vec2 P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(gsamplerCubeArray sampler, vec3 P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:gsamplerCubeArray sampler}, ${2:vec3 P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(sampler1DShadow sampler, float P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:sampler1DShadow sampler}, ${2:float P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(sampler2DShadow sampler, vec2 P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:sampler2DShadow sampler}, ${2:vec2 P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(samplerCubeShadow sampler, vec3 P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:samplerCubeShadow sampler}, ${2:vec3 P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(sampler1DArrayShadow sampler, float P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:sampler1DArrayShadow sampler}, ${2:float P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(sampler2DArrayShadow sampler, vec2 P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:sampler2DArrayShadow sampler}, ${2:vec2 P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+    "vec2 textureQueryLod(samplerCubeArrayShadow sampler, vec3 P)": {
+        "predix": ["textureQueryLod"],
+        "body": ["textureQueryLod(${1:samplerCubeArrayShadow sampler}, ${2:vec3 P})"],
+        "description": "Returns the mipmap array(s) that would be accessed in the x component of the return value. Returns the computed level-of-detail relative to the base level in the y component of the return value. If called on an incomplete texture, the results are undefined."
+    },
+
+
+    "int textureQueryLevels(gsampler1D sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:gsampler1D sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(gsampler2D sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:gsampler2D sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(gsampler3D sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:gsampler3D sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(gsamplerCube sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:gsamplerCube sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(gsampler1DArray sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:gsampler1DArray sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(gsampler2DArray sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:gsampler2DArray sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(gsamplerCubeArray sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:gsamplerCubeArray sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(sampler1DShadow sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:sampler1DShadow sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(sampler2DShadow sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:sampler2DShadow sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(samplerCubeShadow sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:samplerCubeShadow sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(sampler1DArrayShadow sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:sampler1DArrayShadow sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(sampler2DArrayShadow sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:sampler2DArrayShadow sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+    "int textureQueryLevels(samplerCubeArrayShadow sampler)": {
+        "prefix": ["textureQueryLevels"],
+        "body": ["textureQueryLevels(${1:samplerCubeArrayShadow sampler})"],
+        "description": "Returns the number of mipmap levels accessible in the texture associated with sampler, as defined in the OpenGL Specification. The value zero will be returned if no texture or an incomplete texture is associated with sampler. Available in all shader stages."
+    },
+
+
+    "int textureSamples(gsampler2DMS sampler)": {
+        "prefix": ["textureSamples"],
+        "body": ["textureSamples(${1:gsampler2DMS sampler})"],
+        "description": "Returns the number of samples of the texture or textures bound to sampler."
+    },
+    "int textureSamples(gsampler2DMSArray sampler)": {
+        "prefix": ["textureSamples"],
+        "body": ["textureSamples(${1:gsampler2DMSArray sampler})"],
+        "description": "Returns the number of samples of the texture or textures bound to sampler."
+    },
+
+
+    "gvec4 texture(gsampler1D sampler, float P[,float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:gsampler1D sampler}, ${2:float P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "gvec4 texture(gsampler2D sampler, vec2 P[,float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:gsampler2D sampler}, ${2:vec2 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "gvec4 texture(gsampler3D sampler, vec3 P[,float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:gsampler3D sampler}, ${2:vec3 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "gvec4 texture(gsamplerCube sampler, vec3 P[,float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:gsamplerCube sampler}, ${2:vec3 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "float texture(sampler1DShadow sampler, vec3 P[, float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:sampler1DShadow sampler}, ${2:vec3 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "float texture(sampler2DShadow sampler, vec3 P[, float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:sampler2DShadow sampler}, ${2:vec3 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "float texture(samplerCubeShadow sampler, vec4 P[, float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:samplerCubeShadow sampler}, ${2:vec4 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "gvec4 texture(gsampler2DArray sampler, vec3 P[, float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:gsampler2DArray sampler}, ${2:vec3 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "gvec4 texture(gsamplerCubeArray sampler, vec4 P[, float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:gsamplerCubeArray sampler}, ${2:vec4 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "gvec4 texture(gsampler1DArray sampler, vec2 P[, float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:gsampler1DArray sampler}, ${2:vec2 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "float texture(sampler1DArrayShadow sampler, vec3 P[, float bias])": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:sampler1DArrayShadow sampler}, ${2:vec3 P[,float bias]})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "float texture(sampler2DArrayShadow sampler, vec4 P)": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:sampler2DArrayShadow sampler}, ${2:vec4 P})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "gvec4 texture(gsampler2DRect sampler, vec2 P)": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:gsampler2DRect sampler}, ${2:vec2 P})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "float texture(sampler2DRectShadow sampler, vec3 P)": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:sampler2DRectShadow sampler}, ${2:vec3 P})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+    "float texture(samplerCubeArrayShadow sampler, vec4 P, float compare)": {
+        "prefix": ["texture"],
+        "body": ["texture(${1:samplerCubeArrayShadow sampler}, ${2:vec4 P}, ${3:float compare})"],
+        "description": "Use the texture coordinate P to do a texture lookup in the texture currently bound to sampler. For shadow forms: When compare is present, it is used as D_ref and the array layer comes from the last component of P. When compare is not present, the last component of P is used as D_ref and the array layer comes from the second to last component of P. (The second component of P is unused for 1D shadow lookups.) For non-shadow forms: the array layer comes from the last component of P"
+    },
+
+
+    "gvec4 textureProj(gsampler1D sampler, vec2 P[,float bias])": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler1D sampler}, ${2:vec2 P[,float bias]})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+    "gvec4 textureProj(gsampler1D sampler, vec4 P[,float bias])": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler1D sampler}, ${2:vec4 P[,float bias]})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+    "gvec4 textureProj(gsampler2D sampler, vec3 P[,float bias])": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler2D sampler}, ${2:vec3 P[,float bias]})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+    "gvec4 textureProj(gsampler2D sampler, vec4 P[,float bias])": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler2D sampler}, ${2:vec4 P[,float bias]})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+    "gvec4 textureProj(gsampler3D sampler, vec4 P[,float bias])": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler3D sampler}, ${2:vec4 P[,float bias]})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+    "float textureProj(sampler1DShadow sampler, vec4 P[,float bias])": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:sampler1DShadow sampler}, ${2:vec4 P[,float bias]})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+    "float textureProj(sampler2DShadow sampler, vec4 P[,float bias])": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:sampler2DShadow sampler}, ${2:vec4 P[,float bias]})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+    "gvec4 textureProj(gsampler2DRect sampler, vec3 P)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler2DRect sampler}, ${2:vec3 P})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+    "gvec4 textureProj(gsampler2DRect sampler, vec4 P)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler2DRect sampler}, ${2:vec4 P})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+    "float textureProj(sampler2DRectShadow sampler, vec4 P)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:sampler2DRectShadow sampler}, ${2:vec4 P})"],
+        "description": "Do a texture lookup with projection. The texture coordinates consumed from P, not including the last component of P, are divided by the last component of P to form projected coordinates P'. The resulting third component of P in the shadow forms is used as Dref. The third component of P is ignored when sampler has type gsampler2D and P has type vec4. After these values are computed, texture lookup proceeds as in texture."
+    },
+
+
+
+
+    "gvec4 textureLod(gsampler1D sampler, float P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler1D sampler}, ${2:float P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+    "gvec4 textureLod(gsampler2D sampler, vec2 P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler2D sampler}, ${2:vec2 P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+    "gvec4 textureLod(gsampler3D sampler, vec3 P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler3D sampler}, ${2:vec3 P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+    "gvec4 textureLod(gsamplerCube sampler, vec3 P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsamplerCube sampler}, ${2:vec3 P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+    "float textureLod(sampler2DShadow sampler, vec3 P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:sampler2DShadow sampler}, ${2:vec3 P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+    "float textureLod(sampler1DShadow sampler, vec3 P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:sampler1DShadow sampler}, ${2:vec3 P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+    "gvec4 textureLod(gsampler1DArray sampler, vec2 P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler1DArray sampler}, ${2:vec2 P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+    "float textureLod(sampler1DArrayShadow sampler, vec3 P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:sampler1DArrayShadow sampler}, ${2:vec3 P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+    "gvec4 textureLod(gsampler2DArray sampler, vec3 P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler2DArray sampler}, ${2:vec3 P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+    "gvec4 textureLod(gsamplerCubeArray sampler, vec4 P, float lod)": {
+        "prefix": ["textureProj"],
+        "body": ["textureProj(${1:gsampler1DArray sampler}, ${2:vec2 P}, ${3:float lod})"],
+        "description": "Do a texture lookup as in texture but with explicit level-of-detail; lod specifies λ_base] and sets the partial derivatives as follows: (See section 8.14 “Texture Minification” and equations 8.4-8.6 of the OpenGL Specification.) ∂u / ∂x = ∂v / ∂x = ∂w / ∂x = 0 ∂u / ∂y = ∂v / ∂y = ∂w / ∂y = 0"
+    },
+
+
+
+
+    "gvec4 textureOffset(gsampler1D sampler, float P, int offset[,float bias])": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:gsampler1D sampler}, ${2:float P}, ${3:int offset[,float bias]})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "gvec4 textureOffset(gsampler2D sampler, vec2 P, ivec2 offset[,float bias])": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:gsampler2D sampler}, ${2:vec2 P}, ${3:ivec2 offset[,float bias]})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "gvec4 textureOffset(gsampler3D sampler, vec3 P, ivec3 offset[,float bias])": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:gsampler3D sampler}, ${2:vec3 P}, ${3:ivec3 offset[,float bias]})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "float textureOffset(sampler2DShadow sampler, vec3 P, ivec2 offset[,float bias])": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:sampler2DShadow sampler}, ${2:vec3 P}, ${3:ivec2 offset[,float bias]})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "gvec4 textureOffset(gsampler2DRect sampler, vec2 P, ivec2 offset)": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:gsampler2DRect sampler}, ${2:vec2 P}, ${3:ivec2 offset})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "float textureOffset(sampler2DRectShadow sampler, vec3 P, ivec2 offset)": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:sampler2DRectShadow sampler}, ${2:vec3 P}, ${3:ivec2 offset})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "float textureOffset(sampler1DShadow sampler, vec3 P, int offset[,float bias])": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:sampler1DShadow sampler}, ${2:vec3 P}, ${3:int offset[,float bias]})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "gvec4 textureOffset(gsampler1DArray sampler, vec2 P, int offset[,float bias])": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:sampler1DArray sampler}, ${2:vec2 P}, ${3:int offset[,float bias]})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "gvec4 textureOffset(gsampler2DArray sampler, vec3 P, ivec2 offset[,float bias])": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:gsampler2DArray sampler}, ${2:vec3 P}, ${3:ivec2 offset[,float bias]})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "float textureOffset(sampler1DArrayShadow sampler, vec3 P, int offset[,float bias])": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:sampler1DArrayShadow sampler}, ${2:vec3 P}, ${3:int offset[,float bias]})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+    "float textureOffset(sampler2DArrayShadow sampler, vec4 P, ivec2 offset)": {
+        "prefix": ["textureOffset"],
+        "body": ["textureOffset(${1:sampler2DArrayShadow sampler}, ${2:vec4 P}, ${3:ivec2 offset})"],
+        "description": "Do a texture lookup as in texture but with offset added to the (u,v,w) texel coordinates before looking up each texel. The offset value must be a constant expression. A limited range of offset values are supported; the minimum and maximum offset values are implementationdependent and given by gl_MinProgramTexelOffset and gl_MaxProgramTexelOffset, respectively. Note that offset does not apply to the layer coordinate for texture arrays. This is explained in detail in section 8.14.2 “Coordinate Wrapping and Texel Selection” of the OpenGL Specification, where offset is (δu, δv , δw). Note that texel offsets are also not supported for cube maps."
+    },
+
+
+    "gvec4 texelFetch(gsampler1D sampler, int P, int lod)": {
+        "prefix": ["texelFetch"],
+        "body": ["texelFetch(${1:gsampler1D sampler}, ${2:int P}, ${3:int lod})"],
+        "description": "Use integer texture coordinate P to lookup a single texel from sampler. The array layer comes from the last component of P for the array forms. The level-of-detail lod (if present) is as described in sections 11.1.3.2 “Texel Fetches” and 8.14.1 “Scale Factor and Level of Detail” of the OpenGL Specification."
+    },
+    "gvec4 texelFetch(gsampler2D sampler, ivec2 P, int lod)": {
+        "prefix": ["texelFetch"],
+        "body": ["texelFetch(${1:gsampler2D sampler}, ${2:ivec2 P}, ${3:int lod})"],
+        "description": "Use integer texture coordinate P to lookup a single texel from sampler. The array layer comes from the last component of P for the array forms. The level-of-detail lod (if present) is as described in sections 11.1.3.2 “Texel Fetches” and 8.14.1 “Scale Factor and Level of Detail” of the OpenGL Specification."
+    },
+    "gvec4 texelFetch(gsampler3D sampler, ivec3 P, int lod)": {
+        "prefix": ["texelFetch"],
+        "body": ["texelFetch(${1:gsampler3D sampler}, ${2:ivec3 P}, ${3:int lod})"],
+        "description": "Use integer texture coordinate P to lookup a single texel from sampler. The array layer comes from the last component of P for the array forms. The level-of-detail lod (if present) is as described in sections 11.1.3.2 “Texel Fetches” and 8.14.1 “Scale Factor and Level of Detail” of the OpenGL Specification."
+    },
+    "gvec4 texelFetch(gsampler2DRect sampler, ivec2 P)": {
+        "prefix": ["texelFetch"],
+        "body": ["texelFetch(${1:gsampler2DRect sampler}, ${2:ivec2 P})"],
+        "description": "Use integer texture coordinate P to lookup a single texel from sampler. The array layer comes from the last component of P for the array forms. The level-of-detail lod (if present) is as described in sections 11.1.3.2 “Texel Fetches” and 8.14.1 “Scale Factor and Level of Detail” of the OpenGL Specification."
+    },
+    "gvec4 texelFetch(gsampler1DArray sampler, ivec2 P, int lod)": {
+        "prefix": ["texelFetch"],
+        "body": ["texelFetch(${1:gsampler1DArray sampler}, ${2:ivec2 P}, ${3:int lod})"],
+        "description": "Use integer texture coordinate P to lookup a single texel from sampler. The array layer comes from the last component of P for the array forms. The level-of-detail lod (if present) is as described in sections 11.1.3.2 “Texel Fetches” and 8.14.1 “Scale Factor and Level of Detail” of the OpenGL Specification."
+    },
+    "gvec4 texelFetch(gsampler2DArray sampler, ivec3 P, int lod)": {
+        "prefix": ["texelFetch"],
+        "body": ["texelFetch(${1:gsampler2DArray sampler}, ${2:ivec3 P}, ${3:int lod})"],
+        "description": "Use integer texture coordinate P to lookup a single texel from sampler. The array layer comes from the last component of P for the array forms. The level-of-detail lod (if present) is as described in sections 11.1.3.2 “Texel Fetches” and 8.14.1 “Scale Factor and Level of Detail” of the OpenGL Specification."
+    },
+    "gvec4 texelFetch(gsamplerBuffer sampler, int P)": {
+        "prefix": ["texelFetch"],
+        "body": ["texelFetch(${1:gsamplerBuffer sampler}, ${2:int P})"],
+        "description": "Use integer texture coordinate P to lookup a single texel from sampler. The array layer comes from the last component of P for the array forms. The level-of-detail lod (if present) is as described in sections 11.1.3.2 “Texel Fetches” and 8.14.1 “Scale Factor and Level of Detail” of the OpenGL Specification."
+    },
+    "gvec4 texelFetch(gsampler2DMS sampler, ivec2 P, int sample)": {
+        "prefix": ["texelFetch"],
+        "body": ["texelFetch(${1:gsampler2DMS sampler}, ${2:ivec2 P}, ${3:int sample})"],
+        "description": "Use integer texture coordinate P to lookup a single texel from sampler. The array layer comes from the last component of P for the array forms. The level-of-detail lod (if present) is as described in sections 11.1.3.2 “Texel Fetches” and 8.14.1 “Scale Factor and Level of Detail” of the OpenGL Specification."
+    },
+    "gvec4 texelFetch(gsampler2DMSArray sampler, ivec3 P, int sample)": {
+        "prefix": ["texelFetch"],
+        "body": ["texelFetch(${1:gsampler2DMSArray sampler}, ${2:ivec3 P}, ${3:int sample})"],
+        "description": "Use integer texture coordinate P to lookup a single texel from sampler. The array layer comes from the last component of P for the array forms. The level-of-detail lod (if present) is as described in sections 11.1.3.2 “Texel Fetches” and 8.14.1 “Scale Factor and Level of Detail” of the OpenGL Specification."
+    },
+
+
+    "gvec4 texelFetchOffset(gsampler1D sampler, int P, int lod, int offset)": {
+        "prefix": ["texelFetchOffset"],
+        "body": ["texelFetchOffset(${1:gsampler1D sampler}, ${2:int P}, ${3:int lod}, ${4:int offset})"],
+        "description": "Fetch a single texel as in texelFetch, offset by offset as described in textureOffset."
+    },
+    "gvec4 texelFetchOffset(gsampler2D sampler, ivec2 P, int lod, ivec2 offset)": {
+        "prefix": ["texelFetchOffset"],
+        "body": ["texelFetchOffset(${1:gsampler2D sampler}, ${2:ivec2 P}, ${3:int lod}, ${4:ivec2 offset})"],
+        "description": "Fetch a single texel as in texelFetch, offset by offset as described in textureOffset."
+    },
+    "gvec4 texelFetchOffset(gsampler3D sampler, ivec3 P, int lod, ivec3 offset)": {
+        "prefix": ["texelFetchOffset"],
+        "body": ["texelFetchOffset(${1:gsampler3D sampler}, ${2:ivec3 P}, ${3:int lod}, ${4:ivec3 offset})"],
+        "description": "Fetch a single texel as in texelFetch, offset by offset as described in textureOffset."
+    },
+    "gvec4 texelFetchOffset(gsampler2DRect sampler, ivec2 P, ivec2 offset)": {
+        "prefix": ["texelFetchOffset"],
+        "body": ["texelFetchOffset(${1:gsampler2DRect sampler}, ${2:ivec2 P}, ${3:ivec2 offset})"],
+        "description": "Fetch a single texel as in texelFetch, offset by offset as described in textureOffset."
+    },
+    "gvec4 texelFetchOffset(gsampler1DArray sampler, ivec2 P, int lod, int offset)": {
+        "prefix": ["texelFetchOffset"],
+        "body": ["texelFetchOffset(${1:gsampler1DArray sampler}, ${2:ivec2 P}, ${3:int lod}, ${4:int offset})"],
+        "description": "Fetch a single texel as in texelFetch, offset by offset as described in textureOffset."
+    },
+    "gvec4 texelFetchOffset(gsampler2DArray sampler, ivec3 P, int lod, ivec2 offset)": {
+        "prefix": ["texelFetchOffset"],
+        "body": ["texelFetchOffset(${1:gsampler2DArray sampler}, ${2:ivec3 P}, ${3:int lod}, ${4:ivec2 offset})"],
+        "description": "Fetch a single texel as in texelFetch, offset by offset as described in textureOffset."
+    },
+
+
+    "gvec4 textureProjOffset(gsampler1D sampler, vec2 P, int offset[,float bias])": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:gsampler1D sampler}, ${2:vec2 P}, ${3:int offset[,float bias]})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+    "gvec4 textureProjOffset(gsampler1D sampler, vec4 P, int offset[,float bias])": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:gsampler1D sampler}, ${2:vec4 P}, ${3:int offset[,float bias]})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+    "gvec4 textureProjOffset(gsampler2D sampler, vec3 P, ivec2 offset[,float bias])": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:gsampler2D sampler}, ${2:vec3 P}, ${3:ivec2 offset[,float bias]})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+    "gvec4 textureProjOffset(gsampler2D sampler, vec4 P, ivec2 offset[,float bias])": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:gsampler2D sampler}, ${2:vec4 P}, ${3:ivec2 offset[,float bias]})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+    "gvec4 textureProjOffset(gsampler3D sampler, vec4 P, ivec3 offset[,float bias])": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:gsampler3D sampler}, ${2:vec4 P}, ${3:ivec3 offset[,float bias]})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+    "gvec4 textureProjOffset(gsampler2DRect sampler, vec3 P, ivec2 offset)": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:gsampler2DRect sampler}, ${2:vec3 P}, ${3:ivec2 offset})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+    "gvec4 textureProjOffset(gsampler2DRect sampler, vec4 P, ivec2 offset)": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:gsampler2DRect sampler}, ${2:vec4 P}, ${3:ivec2 offset})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+    "float textureProjOffset(sampler2DRectShadow sampler, vec4 P, ivec2 offset)": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:sampler2DRectShadow sampler}, ${2:vec4 P}, ${3:ivec2 offset})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+    "float textureProjOffset(sampler1DShadow sampler, vec4 P, int offset[,float bias])": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:sampler1DShadow sampler}, ${2:vec4 P}, ${3:int offset[,float bias]})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+    "float textureProjOffset(sampler2DShadow sampler, vec4 P, ivec2 offset[,float bias])": {
+        "prefix": ["textureProjOffset"],
+        "body": ["textureProjOffset(${1:sampler2DShadow sampler}, ${2:vec4 P}, ${3:ivec2 offset[,float bias]})"],
+        "description": "Do a projective texture lookup as described in textureProj, offset by offset as described in textureOffset."
+    },
+
+
+    "gvec4 textureLodOffset(gsampler1D sampler, float P, float lod, int offset)": {
+        "prefix": ["textureLodOffset"],
+        "body": ["textureLodOffset(${1:gsampler1D sampler}, ${2:float P}, ${3:float lod}, ${4:int offset})"],
+        "description": "Do an offset texture lookup with explicit level-ofdetail. See textureLod and textureOffset."
+    },
+    "gvec4 textureLodOffset(gsampler2D sampler, vec2 P, float lod, ivec2 offset)": {
+        "prefix": ["textureLodOffset"],
+        "body": ["textureLodOffset(${1:gsampler1D sampler}, ${2:vec2 P}, ${3:float lod}, ${4:ivec2 offset})"],
+        "description": "Do an offset texture lookup with explicit level-ofdetail. See textureLod and textureOffset."
+    },
+    "gvec4 textureLodOffset(gsampler3D sampler, vec3 P, float lod, ivec3 offset)": {
+        "prefix": ["textureLodOffset"],
+        "body": ["textureLodOffset(${1:gsampler3D sampler}, ${2:vec3 P}, ${3:float lod}, ${4:ivec3 offset})"],
+        "description": "Do an offset texture lookup with explicit level-ofdetail. See textureLod and textureOffset."
+    },
+    "float textureLodOffset(sampler1DShadow sampler, vec3 P, float lod, int offset)": {
+        "prefix": ["textureLodOffset"],
+        "body": ["textureLodOffset(${1:sampler1DShadow sampler}, ${2:vec3 P}, ${3:float lod}, ${4:int offset})"],
+        "description": "Do an offset texture lookup with explicit level-ofdetail. See textureLod and textureOffset."
+    },
+    "float textureLodOffset(sampler2DShadow sampler, vec3 P, float lod, ivec2 offset)": {
+        "prefix": ["textureLodOffset"],
+        "body": ["textureLodOffset(${1:sampler2DShadow sampler}, ${2:vec3 P}, ${3:float lod}, ${4:ivec2 offset})"],
+        "description": "Do an offset texture lookup with explicit level-ofdetail. See textureLod and textureOffset."
+    },
+    "gvec4 textureLodOffset(gsampler1DArray sampler, vec2 P, float lod, int offset)": {
+        "prefix": ["textureLodOffset"],
+        "body": ["textureLodOffset(${1:gsampler1DArray sampler}, ${2:vec2 P}, ${3:float lod}, ${4:int offset})"],
+        "description": "Do an offset texture lookup with explicit level-ofdetail. See textureLod and textureOffset."
+    },
+    "gvec4 textureLodOffset(gsampler2DArray sampler, vec3 P, float lod, ivec2 offset)": {
+        "prefix": ["textureLodOffset"],
+        "body": ["textureLodOffset(${1:gsampler2DShadow sampler}, ${2:vec3 P}, ${3:float lod}, ${4:ivec2 offset})"],
+        "description": "Do an offset texture lookup with explicit level-ofdetail. See textureLod and textureOffset."
+    },
+    "float textureLodOffset(sampler1DArrayShadow sampler, vec3 P, float lod, int offset)": {
+        "prefix": ["textureLodOffset"],
+        "body": ["textureLodOffset(${1:sampler1DArrayShadow sampler}, ${2:vec3 P}, ${3:float lod}, ${4:int offset})"],
+        "description": "Do an offset texture lookup with explicit level-ofdetail. See textureLod and textureOffset."
+    },
+
+
+    "gvec4 textureProjLod(gsampler1D sampler, vec2 P, float lod)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler1D sampler}, ${2:vec2 P}, ${3:float lod})"],
+        "description": "Do a projective texture lookup with explicit level-of-detail. See textureProj and textureLod."
+    },
+    "gvec4 textureProjLod(gsampler1D sampler, vec4 P, float lod)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler1D sampler}, ${2:vec2 P}, ${3:float lod})"],
+        "description": "Do a projective texture lookup with explicit level-of-detail. See textureProj and textureLod."
+    },
+    "gvec4 textureProjLod(gsampler2D sampler, vec3 P, float lod)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler2D sampler}, ${2:vec3 P}, ${3:float lod})"],
+        "description": "Do a projective texture lookup with explicit level-of-detail. See textureProj and textureLod."
+    },
+    "gvec4 textureProjLod(gsampler2D sampler, vec4 P, float lod)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler2D sampler}, ${2:vec4 P}, ${3:float lod})"],
+        "description": "Do a projective texture lookup with explicit level-of-detail. See textureProj and textureLod."
+    },
+    "gvec4 textureProjLod(gsampler3D sampler, vec4 P, float lod)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler3D sampler}, ${2:vec4 P}, ${3:float lod})"],
+        "description": "Do a projective texture lookup with explicit level-of-detail. See textureProj and textureLod."
+    },
+    "float textureProjLod(sampler1DShadow sampler, vec4 P, float lod)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:sampler1DShadow sampler}, ${2:vec4 P}, ${3:float lod})"],
+        "description": "Do a projective texture lookup with explicit level-of-detail. See textureProj and textureLod."
+    },
+    "float textureProjLod(sampler2DShadow sampler, vec4 P, float lod)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:sampler2DShadow sampler}, ${2:vec4 P}, ${3:float lod})"],
+        "description": "Do a projective texture lookup with explicit level-of-detail. See textureProj and textureLod."
+    },
+
+
+    "gvec4 textureProjLodOffset(gsampler1D sampler, vec2 P, float lod, int offset)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler1D sampler}, ${2:vec2 P}, ${3:float lod}, ${4:int offset})"],
+        "description": "Do an offset projective texture lookup with explicit level-of-detail. See textureProj, textureLod, and textureOffset."
+    },
+    "gvec4 textureProjLodOffset(gsampler1D sampler, vec4 P, float lod, int offset)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler1D sampler}, ${2:vec4 P}, ${3:float lod}, ${4:int offset})"],
+        "description": "Do an offset projective texture lookup with explicit level-of-detail. See textureProj, textureLod, and textureOffset."
+    },
+    "gvec4 textureProjLodOffset(gsampler2D sampler, vec3 P, float lod, ivec2 offset)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler2D sampler}, ${2:vec3 P}, ${3:float lod}, ${4:ivec2 offset})"],
+        "description": "Do an offset projective texture lookup with explicit level-of-detail. See textureProj, textureLod, and textureOffset."
+    },
+    "gvec4 textureProjLodOffset(gsampler2D sampler, vec4 P, float lod, ivec2 offset)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler2D sampler}, ${2:vec4 P}, ${3:float lod}, ${4:ivec2 offset})"],
+        "description": "Do an offset projective texture lookup with explicit level-of-detail. See textureProj, textureLod, and textureOffset."
+    },
+    "gvec4 textureProjLodOffset(gsampler3D sampler, vec4 P, float lod, ivec3 offset)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:gsampler3D sampler}, ${2:vec4 P}, ${3:float lod}, ${4:ivec3 offset})"],
+        "description": "Do an offset projective texture lookup with explicit level-of-detail. See textureProj, textureLod, and textureOffset."
+    },
+    "float textureProjLodOffset(sampler1DShadow sampler, vec4 P, float lod, int offset)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:sampler1DShadow sampler}, ${2:vec4 P}, ${3:float lod}, ${4:int offset})"],
+        "description": "Do an offset projective texture lookup with explicit level-of-detail. See textureProj, textureLod, and textureOffset."
+    },
+    "float textureProjLodOffset(sampler2DShadow sampler, vec4 P, float lod, ivec2 offset)": {
+        "prefix": ["textureProjLod"],
+        "body": ["textureProjLod(${1:sampler2DShadow sampler}, ${2:vec4 P}, ${3:float lod}, ${4:ivec2 offset})"],
+        "description": "Do an offset projective texture lookup with explicit level-of-detail. See textureProj, textureLod, and textureOffset."
+    },
+
+
+
+    "gvec4 textureGrad(gsampler1D sampler, float _P, float dPdx, float dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:gsampler1D sampler}, ${2:float _P}, ${3:float dPdx}, ${4:float dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "gvec4 textureGrad(gsampler2D sampler, vec2 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:gsampler2D sampler}, ${2:vec2 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "gvec4 textureGrad(gsampler3D sampler, vec3 P, vec3 dPdx, vec3 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:gsampler3D sampler}, ${2:vec3 P}, ${3:vec3 dPdx}, ${4:vec3 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "gvec4 textureGrad(gsamplerCube sampler, vec3 P, vec3 dPdx, vec3 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:gsamplerCube sampler}, ${2:vec3 P}, ${3:vec3 dPdx}, ${4:vec3 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "gvec4 textureGrad(gsampler2DRect sampler, vec2 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:gsampler2DRect sampler}, ${2:vec2 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "float textureGrad(sampler2DRectShadow sampler, vec3 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:sampler2DRectShadow sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "float textureGrad(sampler1DShadow sampler, vec3 P, float dPdx, float dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:sampler1DShadow sampler}, ${2:vec3 P}, ${3:float dPdx}, ${4:float dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "gvec4 textureGrad(gsampler1DArray sampler, vec2 P, float dPdx, float dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:gsampler1DArray sampler}, ${2:vec2 P}, ${3:float dPdx}, ${4:float dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "gvec4 textureGrad(gsampler2DArray sampler, vec3 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:gsampler2DArray sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "float textureGrad(sampler1DArrayShadow sampler, vec3 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:sampler1DArrayShadow sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "float textureGrad(sampler2DShadow sampler, vec3 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:sampler2DShadow sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "float textureGrad(samplerCubeShadow sampler, vec4 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:samplerCubeShadow sampler}, ${2:vec4 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "float textureGrad(sampler2DrrayShadow sampler, vec4 P, vec3 dPdx, vec3 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:sampler2DArrayShadow sampler}, ${2:vec4 P}, ${3:vec3 dPdx}, ${4:vec3 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+    "gvec4 textureGrad(gsamplerCubeArray sampler, vec4 P, vec3 dPdx, vec3 dPdy)": {
+        "prefix": ["textureGrad"],
+        "body": ["textureGrad(${1:gsamplerCubeArray sampler}, ${2:vec4 P}, ${3:vec3 dPdx}, ${4:vec3 dPdy})"],
+        "description": "Do a texture lookup as in texture but with explicit gradients as shown below. The partial derivatives of P are with respect to window x and window y. For the cube version, the partial derivatives of P are assumed to be in the coordinate system used before texture coordinates are projected onto the appropriate cube face."
+    },
+
+
+    "gvec4 textureGradOffset(gsampler1D sampler, float P, float dPdx, float dPdy, int offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:gsampler1D sampler}, ${2:float P}, ${3:float dPdx}, ${4:float dPdy}, ${5:int offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "gvec4 textureGradOffset(gsampler2D sampler, vec2 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:gsampler2D sampler}, ${2:vec2 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "gvec4 textureGradOffset(gsampler3D sampler, vec3 P, vec3 dPdx, vec3 dPdy, ivec3 offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:gsampler3D sampler}, ${2:vec3 P}, ${3:vec3 dPdx}, ${4:vec3 dPdy}, ${5:ivec3 offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "gvec4 textureGradOffset(gsampler2DRect sampler, vec2 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:gsampler2DRect sampler}, ${2:vec2 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "float textureGradOffset(sampler2DRectShadow sampler, vec3 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:sampler2DRectShadow sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "float textureGradOffset(sampler1DShadow sampler, vec3 P, float dPdx, float dPdy, int offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:sampler1DShadow sampler}, ${2:vec3 P}, ${3:float dPdx}, ${4:float dPdy}, ${5:int offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "float textureGradOffset(sampler2DShadow sampler, vec3 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:sampler2DShadow sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "gvec4 textureGradOffset(gsampler2DArray sampler, vec3 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:gsampler2DArray sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "gvec4 textureGradOffset(gsampler1DArray sampler, vec2 P, float dPdx, float dPdy, int offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:gsampler1DArray sampler}, ${2:vec2 P}, ${3:float dPdx}, ${4:float dPdy}, ${5:int offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "float textureGradOffset(sampler1DArrayShadow sampler, vec3 P, float dPdx, float dPdy, int offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:sampler1DArrayShadow sampler}, ${2:vec3 P}, ${3:float dPdx}, ${4:float dPdy}, ${5:int offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+    "float textureGradOffset(sampler2DArrayShadow sampler, vec4 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureGradOffset"],
+        "body": ["textureGradOffset(${1:sampler2DArrayShadow sampler}, ${2:vec4 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup with both explicit gradient and offset, as described in textureGrad and textureOffset."
+    },
+
+
+    "gvec4 textureProjGrad(gsampler1D sampler, vec2 P, float dPdx, float dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:gsampler1D sampler}, ${2:vec2 P}, ${3:float dPdx}, ${4:float dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+    "gvec4 textureProjGrad(gsampler1D sampler, vec4 P, float dPdx, float dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:gsampler1D sampler}, ${2:vec4 P}, ${3:float dPdx}, ${4:float dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+    "gvec4 textureProjGrad(gsampler2D sampler, vec3 P, float dPdx, float dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:gsampler2D sampler}, ${2:vec3 P}, ${3:float dPdx}, ${4:float dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+    "gvec4 textureProjGrad(gsampler2D sampler, vec4 P, float dPdx, float dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:gsampler2D sampler}, ${2:vec4 P}, ${3:float dPdx}, ${4:float dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+    "gvec4 textureProjGrad(gsampler3D sampler, vec4 P, vec3 dPdx, vec3 dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:gsampler3D sampler}, ${2:vec4 P}, ${3:vec3 dPdx}, ${4:vec3 dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+    "gvec4 textureProjGrad(gsampler2DRect sampler, vec3 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:gsampler2DRect sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+    "gvec4 textureProjGrad(gsampler2DRect sampler, vec4 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:gsampler2DRect sampler}, ${2:vec4 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+    "gvec4 textureProjGrad(sampler2DRectShadow sampler, vec4 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:sampler2DRectShadow sampler}, ${2:vec4 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+    "gvec4 textureProjGrad(sampler1DShadow sampler, vec4 P, float dPdx, float dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:sampler1DShadow sampler}, ${2:vec4 P}, ${3:float dPdx}, ${4:float dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+    "gvec4 textureProjGrad(sampler2DShadow sampler, vec4 P, vec2 dPdx, vec2 dPdy)": {
+        "prefix": ["textureProjGrad"],
+        "body": ["textureProjGrad(${1:sampler2DShadow sampler}, ${2:vec4 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy})"],
+        "description": "Do a texture lookup both projectively, as described in textureProj, and with explicit gradient as described in textureGrad. The partial derivatives dPdx and dPdy are assumed to be already projected."
+    },
+
+
+
+    "gvec4 textureProjGradOffset(gsampler1D sampler, vec2 P, float dPdx, float dPdy, int offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:gsampler1D sampler}, ${2:vec2 P}, ${3:float dPdx}, ${4:float dPdy}, ${5:int offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
+    },
+    "gvec4 textureProjGradOffset(gsampler1D sampler, vec4 P, float dPdx, float dPdy, int offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:gsampler1D sampler}, ${2:vec4 P}, ${3:float dPdx}, ${4:float dPdy}, ${5:int offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
+    },
+    "gvec4 textureProjGradOffset(gsampler2D sampler, vec3 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:gsampler2D sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
+    },
+    "gvec4 textureProjGradOffset(gsampler2D sampler, vec4 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:gsampler2D sampler}, ${2:vec4 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
+    },
+    "gvec4 textureProjGradOffset(gsampler3D sampler, vec4 P, vec3 dPdx, vec3 dPdy, ivec2 offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:gsampler3D sampler}, ${2:vec4 P}, ${3:vec3 dPdx}, ${4:vec3 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
+    },
+    "gvec4 textureProjGradOffset(gsampler2DRect sampler, vec3 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:gsampler2DRect sampler}, ${2:vec3 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
+    },
+    "gvec4 textureProjGradOffset(gsampler2DRect sampler, vec4 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:gsampler2DRect sampler}, ${2:vec4 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
+    },
+    "float textureProjGradOffset(sampler2DRectShadow sampler, vec4 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:sampler2DRectShadow sampler}, ${2:vec4 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
+    },
+    "float textureProjGradOffset(sampler1DShadow sampler, vec4 P, float dPdx, float dPdy, int offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:sampler1DShadow sampler}, ${2:vec4 P}, ${3:float dPdx}, ${4:float dPdy}, ${5:int offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
+    },
+    "float textureProjGradOffset(sampler2DShadow sampler, vec4 P, vec2 dPdx, vec2 dPdy, ivec2 offset)": {
+        "prefix": ["textureProjGradOffset"],
+        "body": ["textureProjGradOffset(${1:sampler2DShadow sampler}, ${2:vec4 P}, ${3:vec2 dPdx}, ${4:vec2 dPdy}, ${5:ivec2 offset})"],
+        "description": "Do a texture lookup projectively and with explicit gradient as described in textureProjGrad, as well as with offset, as described in textureOffset."
     }
-
-
 }
 

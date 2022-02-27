@@ -45,13 +45,6 @@ Since I was having trouble finding GLSL support for VScode in Linux, I tried mak
 
 Basic context aware sintax highlighting following C language standards and **[GLSL specification](https://www.khronos.org/registry/OpenGL/specs/gl/)** as defined by Khronos group.
 
-  
-
-  
-
-  
-
------------------------------------------------------------------------------------------------------------
 
   
 
@@ -63,13 +56,6 @@ Basic context aware sintax highlighting following C language standards and **[GL
 
   
 
-  
-
-  
-
------------------------------------------------------------------------------------------------------------
-
-  
 
   
 
@@ -87,13 +73,21 @@ Code snippets, at the moment, give support for:
 
 <li>Angle and Trigonometry Functions;</li>
 
-<li>Exponential Functions</li>
+<li>Exponential Functions;</li>
 
 <li>Common Functions;</li>
 
 <li>Floating-Point Pack and Unpack Functions;</li>
 
-<li>Geometric functions;</li>
+<li>Geometric Functions;</li>
+
+<li>Matrix Functions;</li>
+
+<li>Vector Relational Functions;</li>
+
+<li>Integer Functions;</li>
+
+<li>Texture query functions.</li>
 
 </lu>
 
